@@ -239,17 +239,97 @@
 		</Album>
     </Albums>
     <Artists>
-        <Artist idArtist="A1" nationality="SWE"> Avatar </Artist>
-        <Artist idArtist="A2" nationality="POL"> Behemoth </Artist>
-        <Artist idArtist="A3" nationality="GBR"> Black Sabbath </Artist>
-        <Artist idArtist="A4" nationality="SWE"> Ghost </Artist>
-        <Artist idArtist="A5" nationality="USA"> Greta Van Fleet </Artist>
-        <Artist idArtist="A6" nationality="GBR"> Iron Maiden </Artist>
-        <Artist idArtist="A7" nationality="POL"> Mgła </Artist>
-        <Artist idArtist="A8" nationality="USA"> A Perfect Circle </Artist>
-        <Artist idArtist="A9" nationality="DEU"> Powerwolf </Artist>
-        <Artist idArtist="A10" nationality="USA"> Slipknot </Artist>
-        <Artist idArtist="A11" nationality="USA"> System Of A Down </Artist>
-        <Artist idArtist="A12" nationality="USA"> Tool </Artist>
+        <Artist idArtist="A1" nationality="SWE">
+			<BandName> Avatar </BandName>
+			<Member> Jonas "Kungen" Jarlsby </Member> 
+			<Member> John Alfredsson </Member> 
+			<Member> Johannes Eckerström </Member> 
+			<Member> Tim Öhrström </Member> 
+			<Member> Henrik Sandelin </Member> 
+		</Artist>
+        <Artist idArtist="A2" nationality="POL">
+			<BandName> Behemoth </BandName>
+			<Member> Adam "Nergal" Darski </Member> 
+			<Member> Zbigniew "Inferno" Promiński </Member> 
+			<Member> Tomasz "Orion" Wróblewski </Member> 
+			<Member> Patryk "Seth" Sztyber </Member> 
+		</Artist>
+        <Artist idArtist="A3" nationality="GBR"> 
+			<BandName> Black Sabbath </BandName>
+			<Member> Tony Iommi </Member> 
+			<Member> Geezer Butler </Member> 
+			<Member> Ozzy Osbourne </Member> 
+			<Member> Adam Wakeman </Member> 
+			<Member> Tommy Clufetos </Member> 
+		</Artist>
+        <Artist idArtist="A4" nationality="SWE"> 
+			<BandName> Ghost </BandName> 
+			<Member> Tobias Forge </Member> 
+			<Member> "Nameless Ghouls" </Member> 
+			<Member> "Papa Nihil" </Member> 
+		</Artist>
+        <Artist idArtist="A5" nationality="USA">
+			<BandName> Greta Van Fleet </BandName>
+			<Member> Josh Kiszka </Member> 
+			<Member> Jake Kiszka </Member> 
+			<Member> Sam Kiszka </Member> 
+			<Member> Danny Wagner </Member> 
+		</Artist>
+        <Artist idArtist="A6" nationality="GBR">
+			<BandName> Iron Maiden </BandName> 
+			<Member> Steve Harris </Member> 
+			<Member> Dave Murray </Member> 
+			<Member> Adrian Smith </Member> 
+			<Member> Bruce Dickinson </Member> 
+			<Member> Nicko McBrain </Member> 
+			<Member> Janick Gers </Member> 
+		</Artist>
+        <Artist idArtist="A7" nationality="POL"> 
+			<BandName> Mgła </BandName>
+			<Member> Mikołaj "M." Żentara </Member> 
+			<Member> Maciej "Darkside" Kowalski </Member> 
+		</Artist>
+        <Artist idArtist="A8" nationality="USA">
+			<BandName> A Perfect Circle </BandName> 
+			<Member> Maynard James Keenan </Member> 
+			<Member> Billy Howerdel </Member> 
+			<Member> James Iha </Member> 
+			<Member> Matt McJunkins </Member> 
+			<Member> Jeff Friedl </Member> 
+		</Artist>
+        <Artist idArtist="A9" nationality="DEU"> 
+			<BandName> Powerwolf </BandName> 
+			<Member> Benjamin "Matthew Greywolf" Buss </Member> 
+			<Member> David "Charles Greywolf" Vogt </Member> 
+			<Member> Falk Maria Schlegel </Member> 
+			<Member> Karsten "Attila Dorn" Brill </Member> 
+			<Member> Roel van Helden </Member> 
+		</Artist>
+        <Artist idArtist="A10" nationality="USA"> 
+			<BandName> Slipknot </BandName>
+			<Member> Shawn "The Clown" Crahan </Member> 
+			<Member> Craig "133" Jones </Member> 
+			<Member> Mick Thomson </Member> 
+			<Member> Corey Taylor </Member> 
+			<Member> Sid Wilson </Member> 
+			<Member> Chris Fehn </Member> 
+			<Member> Jim Root </Member> 
+			<Member> Alessandro Venturella </Member> 
+			<Member> Jay Weinberg </Member> 
+		</Artist>
+        <Artist idArtist="A11" nationality="USA"> 
+			<BandName> System Of A Down </BandName>
+			<Member> Serj Tankian </Member> 
+			<Member> Daron Malakian </Member> 
+			<Member> Shavo Odadjian </Member> 
+			<Member> John Dolmayan </Member> 
+		</Artist>
+        <Artist idArtist="A12" nationality="USA"> 
+			<BandName> Tool </BandName>
+			<Member> Danny Carey </Member> 
+			<Member> Adam Jones </Member> 
+			<Member> Maynard James Keenan </Member> 
+			<Member> Justin Chancellor </Member> 
+		</Artist>
     </Artists>
 </Collection>

@@ -1,0 +1,35 @@
+<!ELEMENT Project (Head,Collection)>
+
+<!ELEMENT Head (Author+,Title)>
+
+<!ELEMENT Collection (Albums,Artists,Genres)>
+
+<!ELEMENT Author (#PCDATA)>
+<!ATTLIST Author index CDATA #REQUIRED>
+
+<!ELEMENT Albums (Album)+>
+
+<!ELEMENT Artists (Artist)+>
+
+<!ELEMENT Genres (Genre)+>
+
+<!ELEMENT Album (Title,Length,ReleaseDate)>
+<!ATTLIST Album idArtist IDREF #REQUIRED
+				idGenre IDREFS #REQUIRED>
+
+<!ELEMENT Artist (BandName,Member+)>
+<!ATTLIST Artist idArtist ID #REQUIRED
+				 nationality (USA | GBR | SWE | POL | DEU) #IMPLIED>
+
+<!ELEMENT Genre (#PCDATA)>
+<!ATTLIST Genre idGenre ID #REQUIRED>
+
+<!ELEMENT Length (#PCDATA)>
+
+<!ELEMENT ReleaseDate (#PCDATA)>
+
+<!ELEMENT BandName (#PCDATA)>
+
+<!ELEMENT Member (#PCDATA)>
+
+<!ELEMENT Title (#PCDATA)>

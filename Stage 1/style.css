@@ -1,0 +1,120 @@
+
+/*Main settings*/
+Project
+{
+	background-image: url(background.jpg);
+	font-family: Courier New, monospac;
+	color: white;
+}
+
+/*Head section*/
+Head 
+{
+	display: block;
+	margin: 2em 2em 2em 2em;
+	background-color: rgba(0,0,0,0.5);
+	text-align: center;
+	padding: 1em 1em;
+}
+
+Author
+{
+	display: block;
+}
+
+Head > Title
+{	
+	display: block;
+	padding-top: 0.5em;
+	font-size: 200%;
+}
+
+
+/*Collection section*/
+Collection 
+{
+	display: block;
+	margin: 2em 2em 2em 2em;
+	background-color: rgba(0,0,0,0.5);
+	padding: 1em 1em;
+}
+
+/*Inner section*/
+Albums, Artists
+{
+	display: block;
+	margin-bottom: 4em;
+	padding: 1em 0em;
+}
+
+/*Inner inner section*/
+Album, Artist, Genres
+{
+	display: block;
+	margin: 2em 2em 2em 2em;
+	background-color: rgba(0,0,0,0.5);
+	padding: 1em 4em;
+}
+
+/*Albums*/
+Album > Title::before
+{
+	content: 'Tytuł: ';
+	font-weight: bold;
+}
+
+Album > Title
+{
+	font-size: 130%;
+	display: block;
+}
+
+Length::before
+{
+	content: 'Długość: ';
+	font-weight: bold;
+}
+
+ReleaseDate::before
+{
+	content: 'Data wydania: ';
+	font-weight: bold;
+}
+
+Length, ReleaseDate
+{
+	display: block;
+}
+
+/*Artists*/
+BandName
+{
+	font-weight: bold;
+	font-size: 130%;
+}
+
+Artist::before
+{
+	content: '(' attr(nationality) ') ';
+}
+
+Member
+{
+	display: list-item;
+	list-style-type: circle;
+}
+
+/*Genres*/
+Genre
+{
+	display: list-item;
+	list-style-type: square;
+}
+
+Genres::before
+{
+	content: 'Gatunki';
+	font-size: 130%;
+	font-weight: bold;
+	padding-bottom: 4em;
+}

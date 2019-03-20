@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Project SYSTEM "structure.dtd">
+<?xml-stylesheet type="text/css" href="style.css"?>
 <Project>
 	<Head>
 		<Author index="210278"> Paweł Młynarczyk </Author>

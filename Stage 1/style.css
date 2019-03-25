@@ -71,7 +71,7 @@ Album > Title
 
 NumberOfTracks::before
 {
-	content: 'liczba utworów: ';
+	content: 'Liczba utworów: ';
 	font-weight: bold;
 }
 

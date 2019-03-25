@@ -69,6 +69,12 @@ Album > Title
 	display: block;
 }
 
+NumberOfRecords::before
+{
+	content: 'Ilość utworów: ';
+	font-weight: bold;
+}
+
 Length::before
 {
 	content: 'Długość: ';
@@ -81,7 +87,7 @@ ReleaseDate::before
 	font-weight: bold;
 }
 
-Length, ReleaseDate
+NumberOfRecords, Length, ReleaseDate
 {
 	display: block;
 }

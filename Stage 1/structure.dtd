@@ -13,7 +13,7 @@
 
 <!ELEMENT Genres (Genre)+>
 
-<!ELEMENT Album (Title,Length,ReleaseDate)>
+<!ELEMENT Album (Title,NumberOfRecords,Length,ReleaseDate)>
 <!ATTLIST Album idArtist IDREF #REQUIRED
 				idGenre IDREFS #REQUIRED>
 
@@ -33,3 +33,5 @@
 <!ELEMENT Member (#PCDATA)>
 
 <!ELEMENT Title (#PCDATA)>
+
+<!ELEMENT NumberOfRecords (#PCDATA)>

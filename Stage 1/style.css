@@ -69,7 +69,7 @@ Album > Title
 	display: block;
 }
 
-NumberOfRecords::before
+NumberOfTracks::before
 {
 	content: 'Ilość utworów: ';
 	font-weight: bold;
@@ -87,7 +87,7 @@ ReleaseDate::before
 	font-weight: bold;
 }
 
-NumberOfRecords, Length, ReleaseDate
+NumberOfTracks, Length, ReleaseDate
 {
 	display: block;
 }

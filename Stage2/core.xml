@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Project>
+<mc:Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="urn:musicColection schema.xsd" 
+		 xmlns:mc="urn:musicColection">
 	<Head>
-		<Author index="210278"> Paweł Młynarczyk </Author>
-		<Author index="210245"> Mateusz Kuźniarek </Author>
+		<Author index="210278">
+			<Name> Paweł </Name>
+			<Surname> Młynarczyk </Surname>  
+		</Author>
+		<Author index="210245">
+			<Name> Mateusz </Name>
+			<Surname> Kuźniarek </Surname>   
+		</Author>
 		<Title> Kolekcja Albumów Muzycznych </Title>
 	</Head>
 	<Collection>
@@ -10,356 +18,356 @@
 			<Album idArtist="A12" idGenre="G18">
 				<Title> 10,000 Days </Title>
 				<NumberOfTracks> 11 </NumberOfTracks>
-				<Length> 75:52 </Length>
-				<ReleaseDate> 28.04.2006 </ReleaseDate>
+				<Length> 01:15:52 </Length>
+				<ReleaseDate> 2006-04-28 </ReleaseDate>
 			</Album>
 			<Album idArtist="A10" idGenre="G11 G14">
 				<Title> .5: The Gray Chapter </Title>
 				<NumberOfTracks> 14 </NumberOfTracks>
-				<Length> 63:51 </Length>
-				<ReleaseDate> 17.10.2014 </ReleaseDate>
+				<Length> 01:03:51 </Length>
+				<ReleaseDate> 2014-10-17 </ReleaseDate>
 			</Album>
 			<Album idArtist="A12" idGenre="G1 G18">
 				<Title> Aenima </Title>
 				<NumberOfTracks> 15 </NumberOfTracks>
-				<Length> 77:18 </Length>
-				<ReleaseDate> 17.09.1996 </ReleaseDate>
+				<Length> 01:17:18 </Length>
+				<ReleaseDate> 1996-09-17 </ReleaseDate>
 			</Album>
 			<Album idArtist="A10" idGenre="G9">
 				<Title> All Hope Is Gone </Title>
 				<NumberOfTracks> 12 </NumberOfTracks>
-				<Length> 57:57 </Length>
-				<ReleaseDate> 20.08.2008 </ReleaseDate>
+				<Length> 00:57:57 </Length>
+				<ReleaseDate> 2008-08-20 </ReleaseDate>
 			</Album>
 			<Album idArtist="A5" idGenre="G10 G7 G19">
 				<Title> Anthem Of The Peaceful Army </Title>
 				<NumberOfTracks> 10 </NumberOfTracks>
-				<Length> 45:53 </Length>
-				<ReleaseDate> 19.10.2018 </ReleaseDate>
+				<Length> 00:45:53 </Length>
+				<ReleaseDate> 2018-10-19 </ReleaseDate>
 			</Album>
 			<Album idArtist="A2" idGenre="G6">
 				<Title> The Apostasy </Title>
 				<NumberOfTracks> 13 </NumberOfTracks>
-				<Length> 39:39 </Length>
-				<ReleaseDate> 17.07.2007 </ReleaseDate>
+				<Length> 00:39:39 </Length>
+				<ReleaseDate> 2007-07-17 </ReleaseDate>
 			</Album>
 			<Album idArtist="A1" idGenre="G11">
 				<Title> Avatar Country </Title>
 				<NumberOfTracks> 10 </NumberOfTracks>
-				<Length> 43:18 </Length>
-				<ReleaseDate> 12.01.2018 </ReleaseDate>
+				<Length> 00:43:18 </Length>
+				<ReleaseDate> 2018-01-12 </ReleaseDate>
 			</Album>
 			<Album idArtist="A9" idGenre="G16 G11">
 				<Title> Bible Of The Beast </Title>
 				<NumberOfTracks> 12 </NumberOfTracks>
-				<Length> 47:36 </Length>
-				<ReleaseDate> 24.04.2009 </ReleaseDate>
+				<Length> 00:47:36 </Length>
+				<ReleaseDate> 2009-04-24 </ReleaseDate>
 			</Album>
 			<Album idArtist="A3" idGenre="G11">
 				<Title> Black Sabbath </Title>
 				<NumberOfTracks> 7 </NumberOfTracks>
-				<Length> 38:12 </Length>
-				<ReleaseDate> 13.02.1970 </ReleaseDate>
+				<Length> 00:38:12 </Length>
+				<ReleaseDate> 1970-02-13 </ReleaseDate>
 			</Album>
 			<Album idArtist="A1" idGenre="G9 G13 G4 G12">
 				<Title> Black Waltz </Title>
 				<NumberOfTracks> 11 </NumberOfTracks>
-				<Length> 54:48 </Length>
-				<ReleaseDate> 25.01.2012 </ReleaseDate>
+				<Length> 00:54:48 </Length>
+				<ReleaseDate> 2012-01-25 </ReleaseDate>
 			</Album>
 			<Album idArtist="A9" idGenre="G16 G20">
 				<Title> Blessed &amp; Possessed </Title>
 				<NumberOfTracks> 11 </NumberOfTracks>
-				<Length> 45:42 </Length>
-				<ReleaseDate> 17.07.2015 </ReleaseDate>
+				<Length> 00:45:42 </Length>
+				<ReleaseDate> 2015-07-17 </ReleaseDate>
 			</Album>
 			<Album idArtist="A9" idGenre="G16 G11">
 				<Title> Blood Of The Saints </Title>
 				<NumberOfTracks> 11 </NumberOfTracks>
-				<Length> 41:46 </Length>
-				<ReleaseDate> 29.07.2011 </ReleaseDate>
+				<Length> 00:41:46 </Length>
+				<ReleaseDate> 2011-07-29 </ReleaseDate>
 			</Album>
 			<Album idArtist="A6" idGenre="G11">
 				<Title> The Book Of Souls </Title>
 				<NumberOfTracks> 11 </NumberOfTracks>
-				<Length> 92:11 </Length>
-				<ReleaseDate> 4.09.2015 </ReleaseDate>
+				<Length> 01:32:11 </Length>
+				<ReleaseDate> 2015-09-04 </ReleaseDate>
 			</Album>
 			<Album idArtist="A3" idGenre="G11">
 				<Title> Born Again </Title>
 				<NumberOfTracks> 9 </NumberOfTracks>
-				<Length> 41:04 </Length>
-				<ReleaseDate> 7.08.1983 </ReleaseDate>
+				<Length> 00:41:04 </Length>
+				<ReleaseDate> 1983-08-07 </ReleaseDate>
 			</Album>
 			<Album idArtist="A6" idGenre="G11">
 				<Title> Brave New World </Title>
 				<NumberOfTracks> 10 </NumberOfTracks>
-				<Length> 66:57 </Length>
-				<ReleaseDate> 29.05.2000 </ReleaseDate>
+				<Length> 01:06:57 </Length>
+				<ReleaseDate> 2000-05-29 </ReleaseDate>
 			</Album>
 			<Album idArtist="A3" idGenre="G11">
 				<Title> Cross Purposes </Title>
 				<NumberOfTracks> 11 </NumberOfTracks>
-				<Length> 47:27 </Length>
-				<ReleaseDate> 26.01.1994 </ReleaseDate>
+				<Length> 00:47:27 </Length>
+				<ReleaseDate> 1994-01-26 </ReleaseDate>
 			</Album>
 			<Album idArtist="A8" idGenre="G19 G15 G10">
 				<Title> Eat The Elephant </Title>
 				<NumberOfTracks> 12 </NumberOfTracks>
-				<Length> 57:07 </Length>
-				<ReleaseDate> 20.04.2018 </ReleaseDate>
+				<Length> 00:57:07 </Length>
+				<ReleaseDate> 2018-04-20 </ReleaseDate>
 			</Album>
 			<Album idArtist="A8" idGenre="G2 G3">
 				<Title> eMOTIVe </Title>
 				<NumberOfTracks> 12 </NumberOfTracks>
-				<Length> 48:13 </Length>
-				<ReleaseDate> 1.11.2004 </ReleaseDate>
+				<Length> 00:48:13 </Length>
+				<ReleaseDate> 2004-11-01 </ReleaseDate>
 			</Album>
 			<Album idArtist="A3" idGenre="G11">
 				<Title> The Eternal Idol </Title>
 				<NumberOfTracks> 9 </NumberOfTracks>
-				<Length> 42:42 </Length>
-				<ReleaseDate> 23.11.1987 </ReleaseDate>
+				<Length> 00:42:42 </Length>
+				<ReleaseDate> 1987-11-23 </ReleaseDate>
 			</Album>
 			<Album idArtist="A2" idGenre="G6 G17 G21">
 				<Title> Evangelion </Title>
 				<NumberOfTracks> 10 </NumberOfTracks>
-				<Length> 41:54 </Length>
-				<ReleaseDate> 7.08.2009 </ReleaseDate>
+				<Length> 00:41:54 </Length>
+				<ReleaseDate> 2009-08-07 </ReleaseDate>
 			</Album>
 			<Album idArtist="A7" idGenre="G5">
 				<Title> Exercises In Futility </Title>
 				<NumberOfTracks> 6 </NumberOfTracks>
-				<Length> 42:12 </Length>
-				<ReleaseDate> 4.09.2015 </ReleaseDate>
+				<Length> 00:42:12 </Length>
+				<ReleaseDate> 2015-09-04 </ReleaseDate>
 			</Album>
 			<Album idArtist="A6" idGenre="G11">
 				<Title> Fear Of The Dark </Title>
 				<NumberOfTracks> 12 </NumberOfTracks>
-				<Length> 57:58 </Length>
-				<ReleaseDate> 11.05.1992 </ReleaseDate>
+				<Length> 00:57:58 </Length>
+				<ReleaseDate> 1992-05-11 </ReleaseDate>
 			</Album>
 			<Album idArtist="A1" idGenre="G9 G13 G4 G11">
 				<Title> Feathers &amp; Flesh </Title>
 				<NumberOfTracks> 14 </NumberOfTracks>
-				<Length> 67:51 </Length>
-				<ReleaseDate> 13.05.2016 </ReleaseDate>
+				<Length> 01:07:51 </Length>
+				<ReleaseDate> 2016-05-13 </ReleaseDate>
 			</Album>
 			<Album idArtist="A5" idGenre="G10 G7">
 				<Title> From The Fires </Title>
 				<NumberOfTracks> 8 </NumberOfTracks>
-				<Length> 32:15 </Length>
-				<ReleaseDate> 10.11.2017 </ReleaseDate>
+				<Length> 00:32:15 </Length>
+				<ReleaseDate> 2017-11-10 </ReleaseDate>
 			</Album>
 			<Album idArtist="A1" idGenre="G9 G13 G12 G18">
 				<Title> Hail The Apocalypse </Title>
 				<NumberOfTracks> 12 </NumberOfTracks>
-				<Length> 50:52 </Length>
-				<ReleaseDate> 13.05.2014 </ReleaseDate>
+				<Length> 00:50:52 </Length>
+				<ReleaseDate> 2014-05-13 </ReleaseDate>
 			</Album>
 			<Album idArtist="A3" idGenre="G11 G8">
 				<Title> Headless Cross </Title>
 				<NumberOfTracks> 9 </NumberOfTracks>
-				<Length> 40:24 </Length>
-				<ReleaseDate> 24.04.1989 </ReleaseDate>
+				<Length> 00:40:24 </Length>
+				<ReleaseDate> 1989-04-24 </ReleaseDate>
 			</Album>
 			<Album idArtist="A3" idGenre="G11">
 				<Title> Heaven And Hell </Title>
 				<NumberOfTracks> 8 </NumberOfTracks>
-				<Length> 39:46 </Length>
-				<ReleaseDate> 25.04.1980 </ReleaseDate>
+				<Length> 00:39:46 </Length>
+				<ReleaseDate> 1980-04-25 </ReleaseDate>
 			</Album>
 			<Album idArtist="A11" idGenre="G11 G10">
 				<Title> Hypnotize </Title>
 				<NumberOfTracks> 12 </NumberOfTracks>
-				<Length> 39:40 </Length>
-				<ReleaseDate> 22.11.2005 </ReleaseDate>
+				<Length> 00:39:40 </Length>
+				<ReleaseDate> 2005-11-22 </ReleaseDate>
 			</Album>
 			<Album idArtist="A2" idGenre="G6 G17 G21">
 				<Title> I Loved You At Your Darkest </Title>
 				<NumberOfTracks> 13 </NumberOfTracks>
-				<Length> 46:32 </Length>
-				<ReleaseDate> 5.10.2018 </ReleaseDate>
+				<Length> 00:46:32 </Length>
+				<ReleaseDate> 2018-10-05 </ReleaseDate>
 			</Album>
 			<Album idArtist="A4" idGenre="G11 G8">
 				<Title> If You Have Ghost </Title>
 				<NumberOfTracks> 5 </NumberOfTracks>
-				<Length> 24:41 </Length>
-				<ReleaseDate> 20.11.2013 </ReleaseDate>
+				<Length> 00:24:41 </Length>
+				<ReleaseDate> 2013-11-20 </ReleaseDate>
 			</Album>
 			<Album idArtist="A4" idGenre="G11 G8 G19">
 				<Title> Infestissumam </Title>
 				<NumberOfTracks> 10 </NumberOfTracks>
-				<Length> 47:47 </Length>
-				<ReleaseDate> 10.04.2013 </ReleaseDate>
+				<Length> 00:47:47 </Length>
+				<ReleaseDate> 2013-04-10 </ReleaseDate>
 			</Album>
 			<Album idArtist="A10" idGenre="G14">
 				<Title> Iowa </Title>
 				<NumberOfTracks> 14 </NumberOfTracks>
-				<Length> 66:19 </Length>
-				<ReleaseDate> 28.08.2001 </ReleaseDate>
+				<Length> 01:06:19 </Length>
+				<ReleaseDate> 2001-08-28 </ReleaseDate>
 			</Album>
 			<Album idArtist="A12" idGenre="G18 G19">
 				<Title> Lateralus </Title>
 				<NumberOfTracks> 13 </NumberOfTracks>
-				<Length> 78:56 </Length>
-				<ReleaseDate> 15.05.2001 </ReleaseDate>
+				<Length> 01:18:56 </Length>
+				<ReleaseDate> 2001-05-15 </ReleaseDate>
 			</Album>
 			<Album idArtist="A9" idGenre="G16 G11">
 				<Title> Lupus Dei </Title>
 				<NumberOfTracks> 11 </NumberOfTracks>
-				<Length> 43:31 </Length>
-				<ReleaseDate> 7.05.2007 </ReleaseDate>
+				<Length> 00:43:31 </Length>
+				<ReleaseDate> 2007-05-07 </ReleaseDate>
 			</Album>
 			<Album idArtist="A3" idGenre="G11">
 				<Title> Master Of Reality </Title>
 				<NumberOfTracks> 8 </NumberOfTracks>
-				<Length> 34:29 </Length>
-				<ReleaseDate> 21.07.1971 </ReleaseDate>
+				<Length> 00:34:29 </Length>
+				<ReleaseDate> 1971-07-21 </ReleaseDate>
 			</Album>
 			<Album idArtist="A6" idGenre="G11">
 				<Title> A Matter Of Life And Death </Title>
 				<NumberOfTracks> 10 </NumberOfTracks>
-				<Length> 71:53 </Length>
-				<ReleaseDate> 25.08.2006 </ReleaseDate>
+				<Length> 01:11:53 </Length>
+				<ReleaseDate> 2006-08-25 </ReleaseDate>
 			</Album>
 			<Album idArtist="A4" idGenre="G11 G8 G19 G10">
 				<Title> Meliora </Title>
 				<NumberOfTracks> 10 </NumberOfTracks>
-				<Length> 41:35 </Length>
-				<ReleaseDate> 21.08.2015 </ReleaseDate>
+				<Length> 00:41:35 </Length>
+				<ReleaseDate> 2015-08-21 </ReleaseDate>
 			</Album>
 			<Album idArtist="A8" idGenre="G1 G2 G10 G19 G3">
 				<Title> Mer De Noms </Title>
 				<NumberOfTracks> 12 </NumberOfTracks>
-				<Length> 44:25 </Length>
-				<ReleaseDate> 23.05.2000 </ReleaseDate>
+				<Length> 00:44:25 </Length>
+				<ReleaseDate> 2000-05-23 </ReleaseDate>
 			</Album>
 			<Album idArtist="A11" idGenre="G14">
 				<Title> Mezmerize </Title>
 				<NumberOfTracks> 11 </NumberOfTracks>
-				<Length> 36:06 </Length>
-				<ReleaseDate> 17.05.2005 </ReleaseDate>
+				<Length> 00:36:06 </Length>
+				<ReleaseDate> 2005-05-17 </ReleaseDate>
 			</Album>
 			<Album idArtist="A3" idGenre="G11">
 				<Title> Mob Rules </Title>
 				<NumberOfTracks> 9 </NumberOfTracks>
-				<Length> 40:25 </Length>
-				<ReleaseDate> 4.11.1981 </ReleaseDate>
+				<Length> 00:40:25 </Length>
+				<ReleaseDate> 1981-11-04 </ReleaseDate>
 			</Album>
 			<Album idArtist="A6" idGenre="G11">
 				<Title> The Number Of The Beast </Title>
 				<NumberOfTracks> 9 </NumberOfTracks>
-				<Length> 44:39 </Length>
-				<ReleaseDate> 22.03.1982 </ReleaseDate>
+				<Length> 00:44:39 </Length>
+				<ReleaseDate> 1982-03-22 </ReleaseDate>
 			</Album>
 			<Album idArtist="A4" idGenre="G11 G8 G10">
 				<Title> Opus Eponymous </Title>
 				<NumberOfTracks> 9 </NumberOfTracks>
-				<Length> 34:41 </Length>
-				<ReleaseDate> 18.10.2010 </ReleaseDate>
+				<Length> 00:34:41 </Length>
+				<ReleaseDate> 2010-10-18 </ReleaseDate>
 			</Album>
 			<Album idArtist="A3" idGenre="G11">
 				<Title> Paranoid </Title>
 				<NumberOfTracks> 8 </NumberOfTracks>
-				<Length> 41:51 </Length>
-				<ReleaseDate> 18.09.1970 </ReleaseDate>
+				<Length> 00:41:51 </Length>
+				<ReleaseDate> 1970-09-18 </ReleaseDate>
 			</Album>
 			<Album idArtist="A6" idGenre="G11">
 				<Title> Piece Of Mind </Title>
 				<NumberOfTracks> 9 </NumberOfTracks>
-				<Length> 45:18 </Length>
-				<ReleaseDate> 16.05.1983 </ReleaseDate>
+				<Length> 00:45:18 </Length>
+				<ReleaseDate> 1983-05-16 </ReleaseDate>
 			</Album>
 			<Album idArtist="A4" idGenre="G11 G8 G10 G19">
 				<Title> Popestar </Title>
 				<NumberOfTracks> 5 </NumberOfTracks>
-				<Length> 23:37 </Length>
-				<ReleaseDate> 16.09.2016 </ReleaseDate>
+				<Length> 00:23:37 </Length>
+				<ReleaseDate> 2016-09-16 </ReleaseDate>
 			</Album>
 			<Album idArtist="A6" idGenre="G11">
 				<Title> Powerslave </Title>
 				<NumberOfTracks> 8 </NumberOfTracks>
-				<Length> 51:12 </Length>
-				<ReleaseDate> 3.09.1984 </ReleaseDate>
+				<Length> 00:51:12 </Length>
+				<ReleaseDate> 1984-09-03 </ReleaseDate>
 			</Album>
 			<Album idArtist="A9" idGenre="G16 G11">
 				<Title> Preachers Of The Night </Title>
 				<NumberOfTracks> 11 </NumberOfTracks>
-				<Length> 45:32 </Length>
-				<ReleaseDate> 19.07.2013 </ReleaseDate>
+				<Length> 00:45:32 </Length>
+				<ReleaseDate> 2013-07-19 </ReleaseDate>
 			</Album>
 			<Album idArtist="A4" idGenre="G10 G11 G8 G19">
 				<Title> Prequelle </Title>
 				<NumberOfTracks> 10 </NumberOfTracks>
-				<Length> 41:43 </Length>
-				<ReleaseDate> 1.06.2018 </ReleaseDate>
+				<Length> 00:41:43 </Length>
+				<ReleaseDate> 2018-06-01 </ReleaseDate>
 			</Album>
 			<Album idArtist="A9" idGenre="G16 G11">
 				<Title> Return In Bloodred </Title>
 				<NumberOfTracks> 9 </NumberOfTracks>
-				<Length> 40:00 </Length>
-				<ReleaseDate> 4.04.2005 </ReleaseDate>
+				<Length> 00:40:00 </Length>
+				<ReleaseDate> 2005-04-04 </ReleaseDate>
 			</Album>
 			<Album idArtist="A9" idGenre="G16 G21">
 				<Title> The Sacrament Of Sin </Title>
 				<NumberOfTracks> 11 </NumberOfTracks>
-				<Length> 42:42 </Length>
-				<ReleaseDate> 20.07.2018 </ReleaseDate>
+				<Length> 00:42:42 </Length>
+				<ReleaseDate> 2018-07-20 </ReleaseDate>
 			</Album>
 			<Album idArtist="A2" idGenre="G6 G17 G21">
 				<Title> The Satanist </Title>
 				<NumberOfTracks> 9 </NumberOfTracks>
-				<Length> 44:17 </Length>
-				<ReleaseDate> 3.02.2014 </ReleaseDate>
+				<Length> 00:44:17 </Length>
+				<ReleaseDate> 2014-02-03 </ReleaseDate>
 			</Album>
 			<Album idArtist="A10" idGenre="G14">
 				<Title> Slipknot </Title>
 				<NumberOfTracks> 15 </NumberOfTracks>
-				<Length> 60:26 </Length>
-				<ReleaseDate> 29.06.1999 </ReleaseDate>
+				<Length> 01:00:26 </Length>
+				<ReleaseDate> 1999-06-29 </ReleaseDate>
 			</Album>
 			<Album idArtist="A11" idGenre="G1 G14 G20">
 				<Title> Steal This Album! </Title>
 				<NumberOfTracks> 16 </NumberOfTracks>
-				<Length> 43:22 </Length>
-				<ReleaseDate> 26.11.2002 </ReleaseDate>
+				<Length> 00:43:22 </Length>
+				<ReleaseDate> 2002-11-26 </ReleaseDate>
 			</Album>
 			<Album idArtist="A11" idGenre="G1 G14 G20">
 				<Title> System Of A Down </Title>
 				<NumberOfTracks> 13 </NumberOfTracks>
-				<Length> 40:36 </Length>
-				<ReleaseDate> 30.06.1998 </ReleaseDate>
+				<Length> 00:40:36 </Length>
+				<ReleaseDate> 1998-06-30 </ReleaseDate>
 			</Album>
 			<Album idArtist="A8" idGenre="G2 G10 G3">
 				<Title> Thirteenth Step </Title>
 				<NumberOfTracks> 12 </NumberOfTracks>
-				<Length> 50:36 </Length>
-				<ReleaseDate> 16.09.2003 </ReleaseDate>
+				<Length> 00:50:36 </Length>
+				<ReleaseDate> 2003-09-16 </ReleaseDate>
 			</Album>
 			<Album idArtist="A11" idGenre="G1 G14">
 				<Title> Toxicity </Title>
 				<NumberOfTracks> 14 </NumberOfTracks>
-				<Length> 44:01 </Length>
-				<ReleaseDate> 27.08.2001 </ReleaseDate>
+				<Length> 00:44:01 </Length>
+				<ReleaseDate> 2001-08-27 </ReleaseDate>
 			</Album>
 			<Album idArtist="A3" idGenre="G11">
 				<Title> Tyr </Title>
 				<NumberOfTracks> 9 </NumberOfTracks>
-				<Length> 39:16 </Length>
-				<ReleaseDate> 20.08.1990 </ReleaseDate>
+				<Length> 00:39:16 </Length>
+				<ReleaseDate>1990-08-20</ReleaseDate>
 			</Album>
 			<Album idArtist="A12" idGenre="G1 G18">
 				<Title> Undertow </Title>
 				<NumberOfTracks> 10 </NumberOfTracks>
-				<Length> 69:13 </Length>
-				<ReleaseDate> 6.04.1993 </ReleaseDate>
+				<Length> 01:09:13 </Length>
+				<ReleaseDate> 1993-04-06 </ReleaseDate>
 			</Album>
 			<Album idArtist="A10" idGenre="G14 G1">
 				<Title> Vol.3: (The Subliminal Verses) </Title>
 				<NumberOfTracks> 14 </NumberOfTracks>
-				<Length> 60:09 </Length>
-				<ReleaseDate> 21.05.2004 </ReleaseDate>
+				<Length> 01:00:09 </Length>
+				<ReleaseDate> 2004-05-21 </ReleaseDate>
 			</Album>
 		</Albums>
 		<Artists>
@@ -367,8 +375,8 @@
 				<BandName> Avatar </BandName>
 				<Member> 
 					<Name> Jonas </Name>
-					<StageName> "Kungen" </StageName>
 					<Surname> Jarlsby </Surname>
+					<StageName> "Kungen" </StageName>
 				</Member>
 				<Member>
 					<Name> John </Name>
@@ -391,23 +399,23 @@
 				<BandName> Behemoth </BandName>
 				<Member frontman="true"> 
 					<Name> Adam </Name>
-					<StageName> "Nergal" </StageName>
-					<Surname> Darski </Surname>   
+					<Surname> Darski </Surname>  
+					<StageName> "Nergal" </StageName> 
 				</Member>
 				<Member>
 					<Name> Zbigniew </Name>
-					<StageName> "Inferno" </StageName>
 					<Surname> Promiński </Surname>   
+					<StageName> "Inferno" </StageName>
 				</Member>
 				<Member> 
 					<Name> Tomasz </Name>
-					<StageName> "Orion" </StageName>
 					<Surname> Wróblewski </Surname>   
+					<StageName> "Orion" </StageName>
 				</Member>
 				<Member> 
 					<Name> Patryk </Name>
-					<StageName> "Seth" </StageName>
-					<Surname> Sztyber </Surname>   
+					<Surname> Sztyber </Surname> 
+					<StageName> "Seth" </StageName>  
 				</Member>
 			</Artist>
 			<Artist idArtist="A3" nationality="GBR">
@@ -437,11 +445,11 @@
 				<BandName> Ghost </BandName>
 				<Member frontman="true">
 					<Name> Tobias </Name>
+					<Surname> Forge </Surname>   
 					<StageName> "Papa Emeritus I" </StageName>
 					<StageName> "Papa Emeritus II" </StageName>
 					<StageName> "Papa Emeritus III" </StageName>
 					<StageName> "Cardinal Copia" </StageName>
-					<Surname> Forge </Surname>   
 				</Member>
 				<Member> 
 					<StageName> "Nameless Ghoul" </StageName>
@@ -527,13 +535,13 @@
 				<BandName> Mgła </BandName>
 				<Member frontman="true">
 					<Name> Mikołaj </Name>
-					<StageName> "M." </StageName>
-					<Surname> Żentara </Surname>    
+					<Surname> Żentara </Surname>   
+					<StageName> "M." </StageName> 
 				</Member>
 				<Member>
 					<Name> Maciej </Name>
-					<StageName> "Darkside" </StageName>
 					<Surname> Kowalski </Surname>    
+					<StageName> "Darkside" </StageName>
 				</Member>
 			</Artist>
 			<Artist idArtist="A8" nationality="USA">
@@ -564,13 +572,13 @@
 				<BandName> Powerwolf </BandName>
 				<Member>
 					<Name> Benjamin </Name>
-					<StageName> "Matthew Greywolf" </StageName>
-					<Surname> Buss </Surname>    
+					<Surname> Buss </Surname> 
+					<StageName> "Matthew Greywolf" </StageName>   
 				</Member>
 				<Member>
 					<Name> David </Name>
-					<StageName> "Charles Greywolf" </StageName>
-					<Surname> Kowalski </Surname>    
+					<Surname> Kowalski </Surname> 
+					<StageName> "Charles Greywolf" </StageName>   
 				</Member>
 				<Member>
 					<Name> Falk </Name>
@@ -579,8 +587,8 @@
 				</Member>
 				<Member frontman="true">
 					<Name> Karsten </Name>
-					<StageName> "Attila Dorn" </StageName>
-					<Surname> Brill </Surname>    
+					<Surname> Brill </Surname>   
+					<StageName> "Attila Dorn" </StageName> 
 				</Member>
 				<Member>
 					<Name> Roel </Name>
@@ -591,40 +599,40 @@
 				<BandName> Slipknot </BandName>
 				<Member>
 					<Name> Shawn </Name>
+					<Surname> Crahan </Surname>    
 					<StageName> "Clown" </StageName>
 					<StageName> "#6" </StageName>
-					<Surname> Crahan </Surname>    
 				</Member>
 				<Member>
 					<Name> Craig </Name>
+					<Surname> Jones </Surname>    
 					<StageName> "133" </StageName>
 					<StageName> "#5" </StageName>
-					<Surname> Jones </Surname>    
 				</Member>
 				<Member>
 					<Name> Mick </Name>
-					<StageName> "#7" </StageName>
-					<Surname> Thomson </Surname>    
+					<Surname> Thomson </Surname>   
+					<StageName> "#7" </StageName> 
 				</Member>
 				<Member frontman="true">
 					<Name> Corey </Name>
-					<StageName> "#8" </StageName>
 					<Surname> Taylor </Surname>    
+					<StageName> "#8" </StageName>
 				</Member>
 				<Member>
 					<Name> Sid </Name>
-					<StageName> "#0" </StageName>
 					<Surname> Wilson </Surname>    
+					<StageName> "#0" </StageName>
 				</Member>
 				<Member>
 					<Name> Chris </Name>
-					<StageName> "#3" </StageName>
-					<Surname> Fehn </Surname>    
+					<Surname> Fehn </Surname>  
+					<StageName> "#3" </StageName>  
 				</Member>
 				<Member>
 					<Name> Jim </Name>
-					<StageName> "#4" </StageName>
 					<Surname> Root </Surname>    
+					<StageName> "#4" </StageName>
 				</Member>
 				<Member>
 					<Name> Alessandro </Name>
@@ -699,4 +707,4 @@
 			<Genre idGenre="G21"> Symphonic Metal </Genre>
 		</Genres>
 	</Collection>
-</Project>
+</mc:Project>

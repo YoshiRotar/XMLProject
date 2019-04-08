@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mc:Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-		 xsi:schemaLocation="urn:musicColection schema.xsd" 
-		 xmlns:mc="urn:musicColection">
+		 xsi:schemaLocation="urn:musicCollection schema.xsd" 
+		 xmlns:mc="urn:musicCollection">
 	<Head>
 		<Author index="210278">
 			<Name> Paweł </Name>

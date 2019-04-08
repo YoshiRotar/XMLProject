@@ -1,107 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-			xmlns:mc="urn:musicColection"
-			targetNamespace="urn:musicColection">
-			
-	<xsd:element name="Project" type="mc:ProjectType"/>		
-			
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:mc="urn:musicCollection" targetNamespace="urn:musicCollection">
+	<xsd:element name="Project" type="mc:ProjectType">
+		<xsd:key name="ArtistKey">
+			<xsd:selector xpath="Collection/Artists/Artist"/>
+			<xsd:field xpath="@idArtist"/>
+		</xsd:key>
+		<xsd:key name="GenreKey">
+			<xsd:selector xpath="Collection/Genres/Genre"/>
+			<xsd:field xpath="@idGenre"/>
+		</xsd:key>
+		<xsd:keyref name="ArtistRef" refer="mc:ArtistKey">
+			<xsd:selector xpath="Collection/Albums/Album"/>
+			<xsd:field xpath="@idArtist"/>
+		</xsd:keyref>
+	</xsd:element>
 	<xsd:complexType name="ProjectType">
 		<xsd:sequence>
-			<xsd:element type="mc:HeadType" name="Head"/>
-			<xsd:element type="mc:CollectionType" name="Collection"/>
+			<xsd:element name="Head" type="mc:HeadType"/>
+			<xsd:element name="Collection" type="mc:CollectionType"/>
 		</xsd:sequence>
-	</xsd:complexType>		
-			
+	</xsd:complexType>
 	<xsd:complexType name="HeadType">
 		<xsd:sequence>
-		  <xsd:element type="mc:AuthorType" name="Author" maxOccurs="2"/>
-		  <xsd:element type="xsd:normalizedString" name="Title" fixed=" Kolekcja Albumów Muzycznych "/>
+			<xsd:element name="Author" type="mc:AuthorType" maxOccurs="2"/>
+			<xsd:element name="Title" type="xsd:normalizedString" fixed=" Kolekcja Albumów Muzycznych "/>
 		</xsd:sequence>
-	</xsd:complexType>		
-			
-    <xsd:complexType name="AuthorType">
-	    <xsd:sequence>
-			<xsd:element type="mc:NameType" name="Name"/>
-			<xsd:element type="mc:NameType" name="Surname"/>
+	</xsd:complexType>
+	<xsd:complexType name="AuthorType">
+		<xsd:sequence>
+			<xsd:element name="Name" type="mc:NameType"/>
+			<xsd:element name="Surname" type="mc:NameType"/>
 		</xsd:sequence>
-		<xsd:attribute type="mc:IndexType" name="index" use="required"/>
-	</xsd:complexType>			
-				
+		<xsd:attribute name="index" type="mc:IndexType" use="required"/>
+	</xsd:complexType>
 	<xsd:simpleType name="NameType">
 		<xsd:restriction base="xsd:token">
 			<xsd:pattern value="[A-ZŻÖ]{1}[a-ząćęłńóśźżö]+"/>
 		</xsd:restriction>
 	</xsd:simpleType>
-	
 	<xsd:simpleType name="IndexType">
 		<xsd:restriction base="xsd:positiveInteger">
 			<xsd:minInclusive value="100000"/>
 			<xsd:maxExclusive value="1000000"/>
 		</xsd:restriction>
-	</xsd:simpleType>		
-			
+	</xsd:simpleType>
 	<xsd:complexType name="CollectionType">
 		<xsd:sequence>
-			<xsd:element type="mc:AlbumsType" name="Albums"/>
-			<xsd:element type="mc:ArtistsType" name="Artists"/>
-			<xsd:element type="mc:GenresType" name="Genres"/>
+			<xsd:element name="Albums" type="mc:AlbumsType"/>
+			<xsd:element name="Artists" type="mc:ArtistsType"/>
+			<xsd:element name="Genres" type="mc:GenresType"/>
 		</xsd:sequence>
-	</xsd:complexType>		
-			
+	</xsd:complexType>
 	<xsd:complexType name="AlbumsType">
 		<xsd:sequence>
-			<xsd:element type="mc:AlbumType" name="Album" maxOccurs="unbounded"/>
+			<xsd:element name="Album" type="mc:AlbumType" maxOccurs="unbounded"/>
 		</xsd:sequence>
-	</xsd:complexType>		
-			
+	</xsd:complexType>
 	<xsd:complexType name="AlbumType">
 		<xsd:sequence>
-			<xsd:element type="xsd:normalizedString" name="Title"/>
-			<xsd:element type="xsd:positiveInteger" name="NumberOfTracks"/>
-			<xsd:element type="xsd:time" name="Length"/>
-			<xsd:element type="xsd:date" name="ReleaseDate"/>
+			<xsd:element name="Title" type="xsd:normalizedString"/>
+			<xsd:element name="NumberOfTracks" type="xsd:positiveInteger"/>
+			<xsd:element name="Length" type="xsd:time"/>
+			<xsd:element name="ReleaseDate" type="xsd:date"/>
 		</xsd:sequence>
-		<xsd:attribute type="xsd:IDREF" name="idArtist" use="required"/>
-		<xsd:attribute type="xsd:IDREFS" name="idGenre" use="optional"/>
-	</xsd:complexType>		
-			
+		<xsd:attribute name="idArtist" type="xsd:IDREF" use="required"/>
+		<xsd:attribute name="idGenre" type="xsd:IDREFS" use="optional"/>
+	</xsd:complexType>
 	<xsd:complexType name="ArtistsType">
 		<xsd:sequence>
-			<xsd:element type="mc:ArtistType" name="Artist" maxOccurs="unbounded"/>
+			<xsd:element name="Artist" type="mc:ArtistType" maxOccurs="unbounded"/>
 		</xsd:sequence>
-	</xsd:complexType>		
-			
+	</xsd:complexType>
 	<xsd:complexType name="ArtistType">
 		<xsd:sequence>
-			<xsd:element type="xsd:normalizedString" name="BandName"/>
-			<xsd:element type="mc:MemberType" name="Member" maxOccurs="unbounded"/>
+			<xsd:element name="BandName" type="xsd:normalizedString"/>
+			<xsd:element name="Member" type="mc:MemberType" maxOccurs="unbounded"/>
 		</xsd:sequence>
-		<xsd:attribute type="xsd:ID" name="idArtist" use="required"/>
-		<xsd:attribute type="mc:NationalityType" name="nationality" use="optional"/>
-	</xsd:complexType>		
-			
+		<xsd:attribute name="idArtist" type="xsd:ID" use="required"/>
+		<xsd:attribute name="nationality" type="mc:NationalityType" use="optional"/>
+	</xsd:complexType>
 	<xsd:complexType name="MemberType">
 		<xsd:choice maxOccurs="unbounded">
-			<xsd:sequence>
-				<xsd:element type="mc:NameType" name="Name" maxOccurs="2"/>
-				<xsd:element type="mc:MemberSurnameType" name="Surname"/>
-			</xsd:sequence>
-			<xsd:element type="xsd:normalizedString" name="StageName" maxOccurs="unbounded"/>
+			<xsd:group ref="mc:RealName"/>
+			<xsd:element name="StageName" type="xsd:normalizedString" maxOccurs="unbounded"/>
 		</xsd:choice>
-		<xsd:attribute type="xsd:boolean" name="frontman" use="optional" default="false"/>
-	</xsd:complexType>		
-			
+		<xsd:attribute name="frontman" type="xsd:boolean" use="optional" default="false"/>
+	</xsd:complexType>
+	<xsd:group name="RealName">
+		<xsd:sequence>
+			<xsd:element name="Name" type="mc:NameType" maxOccurs="2"/>
+			<xsd:element name="Surname" type="mc:MemberSurnameType"/>
+		</xsd:sequence>
+	</xsd:group>
 	<xsd:simpleType name="MemberSurnameType">
 		<xsd:union memberTypes="mc:NameType mc:ForeignSurnameType"/>
 	</xsd:simpleType>
-			
 	<xsd:simpleType name="ForeignSurnameType">
 		<xsd:restriction base="xsd:token">
 			<xsd:pattern value="[a-z]{3} [A-ZŻÖ]{1}[a-zö]+"/>
 			<xsd:pattern value="[A-ZŻÖ]{1}[a-zöA-ZŻÖ]+"/>
 		</xsd:restriction>
-	</xsd:simpleType>		
-			
+	</xsd:simpleType>
 	<xsd:simpleType name="NationalityType">
 		<xsd:restriction base="xsd:NMTOKEN">
 			<xsd:enumeration value="SWE"/>
@@ -111,19 +110,16 @@
 			<xsd:enumeration value="DEU"/>
 		</xsd:restriction>
 	</xsd:simpleType>
-
 	<xsd:complexType name="GenresType">
 		<xsd:sequence>
-			<xsd:element type="mc:GenreType" name="Genre" maxOccurs="unbounded" minOccurs="0"/>
+			<xsd:element name="Genre" type="mc:GenreType" minOccurs="0" maxOccurs="unbounded"/>
 		</xsd:sequence>
-	</xsd:complexType>			
-			
-  <xsd:complexType name="GenreType">
-    <xsd:simpleContent>
-      <xsd:extension base="xsd:normalizedString">
-        <xsd:attribute type="xsd:ID" name="idGenre" use="required"/>
-      </xsd:extension>
-    </xsd:simpleContent>
-  </xsd:complexType>
-
+	</xsd:complexType>
+	<xsd:complexType name="GenreType">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:normalizedString">
+				<xsd:attribute name="idGenre" type="xsd:ID" use="required"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
 </xsd:schema>

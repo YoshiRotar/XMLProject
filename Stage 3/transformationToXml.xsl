@@ -16,9 +16,16 @@
 							<xsl:element name="Name">
 								<xsl:value-of select="."/>
 							</xsl:element> 
-							<xsl:element name="Count">
+							<xsl:element name="NumberOfAlbums">
 								<xsl:value-of select="count(/Project/Collection/Albums/Album/fn:tokenize(@idGenre, '\s+')[. = $id])"/>
-							</xsl:element> 
+							</xsl:element>
+							<xsl:element name="NumberOfTracksTotal">
+								<xsl:value-of select="sum(/Project/Collection/Albums/Album[fn:tokenize(@idGenre, '\s+') = $id]/NumberOfTracks)"/>
+							</xsl:element>
+							<xsl:element name="NumberOfTracksAverage">
+								<xsl:value-of select="sum(/Project/Collection/Albums/Album[fn:tokenize(@idGenre, '\s+') = $id]/NumberOfTracks) div 
+								count(/Project/Collection/Albums/Album/fn:tokenize(@idGenre, '\s+')[. = $id])"/>
+							</xsl:element>
 						</xsl:element>
 					</xsl:for-each>
 				</xsl:element>
@@ -29,8 +36,15 @@
 							<xsl:element name="Name">
 								<xsl:value-of select="BandName"/>
 							</xsl:element>
-							<xsl:element name="Count">
+							<xsl:element name="NumberOfAlbums">
 								<xsl:value-of select="count(/Project/Collection/Albums/Album/@idArtist[. = $id])"/>
+							</xsl:element>
+							<xsl:element name="NumberOfTracksTotal">
+								<xsl:value-of select="sum(/Project/Collection/Albums/Album[@idArtist = $id]/NumberOfTracks)"/>
+							</xsl:element>
+							<xsl:element name="NumberOfTracksAverage">
+								<xsl:value-of select="sum(/Project/Collection/Albums/Album[@idArtist = $id]/NumberOfTracks) div 
+								count(/Project/Collection/Albums/Album/@idArtist[. = $id])"/>
 							</xsl:element>
 						</xsl:element>
 					</xsl:for-each>
@@ -44,11 +58,11 @@
 							</xsl:element>
 							<xsl:element name="Average">
 								<xsl:variable name="intTime">
-									<xsl:copy>
+									<xsl:for-each select="/Project/Collection/Albums/Album[@idArtist = $id]">
 										<xsl:call-template name="timeToInteger">
-											<xsl:with-param name="time" select="/Project/Collection/Albums/Album[@idArtist = $id]/Length"/>
+											<xsl:with-param name="time" select="Length"/>
 										</xsl:call-template>
-									</xsl:copy>
+									</xsl:for-each>
 								</xsl:variable>
 								<xsl:value-of select="$intTime"/>
 							</xsl:element>
@@ -140,12 +154,12 @@
 		</xsl:element>
 	</xsl:template>
 
-<!--	<xsl:template name="timeToInteger">
+	<xsl:template name="timeToInteger">
 		<xsl:param name="time"/>
 		<xsl:variable name="hour" select="fn:substring($time, 1, 2)"/>
-		<xsl:variable name="minute" select="fn:substring($time, 5, 2)"/>
+		<xsl:variable name="minute" select="fn:substring($time, 4, 2)"/>
 		<xsl:variable name="second" select="fn:substring($time, 7, 2)"/>
 		<xsl:value-of select="(3600 * fn:number($hour)) + (60 * fn:number($minute)) + fn:number($second)"/>
-	</xsl:template>-->
+	</xsl:template>
 
 </xsl:stylesheet>

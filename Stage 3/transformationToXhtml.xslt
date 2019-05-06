@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 	
-	<xsl:output method="xml" doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" 
+	<xsl:output method="xhtml" doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" 
 	  doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN" indent="yes"/>
 	
 	<xsl:template match="/">
 		<html >
 		   <head>
-			 <title>
-			   <xsl:value-of select="Project/Head/Title"/>
-			 </title>
+				<title>
+					<xsl:value-of select="Project/Head/Title"/>
+				</title>
+				<style type="text/css">
+					table, th, td {
+					  border: 1px solid black;
+					  border-collapse: collapse;
+					}
+					th, td {
+					  padding: 5px;
+					  text-align: left;    
+					}
+			   </style>
 		   </head>
-		   <style>
-				table, th, td {
-				  border: 1px solid black;
-				  border-collapse: collapse;
-				}
-				th, td {
-				  padding: 5px;
-				  text-align: left;    
-				}
-		   </style>
 		   <body>
 				<xsl:apply-templates/>
 		   </body>
@@ -43,9 +43,7 @@
 	
 	<xsl:template match="Bands">
 		<xsl:for-each select="Band">
-			<p>
 				<xsl:apply-templates/>
-			</p>
 		</xsl:for-each>
 	</xsl:template>
 	
@@ -56,13 +54,35 @@
 	</xsl:template>
 	
 	<xsl:template match="Nationality">
-		Narodowość: <xsl:value-of select="."/>
-		<br/>
+		<p>
+			Kraj: 
+			<xsl:choose>
+				<xsl:when test=". = 'American'">
+					Stany Zjednoczone
+				</xsl:when>
+				<xsl:when test=". = 'Polish'">
+					Polska
+				</xsl:when>
+				<xsl:when test=". = 'British'">
+					Wielka Brytania
+				</xsl:when>
+				<xsl:when test=". = 'German'">
+					Niemcy
+				</xsl:when> 
+				<xsl:when test=". = 'Swedish'">
+					Szwecja
+				</xsl:when> 
+				<xsl:otherwise>
+					Nieznany
+				</xsl:otherwise>
+			</xsl:choose>
+			<br/>
+		</p>
 	</xsl:template>
 		
 	
 	<xsl:template match="Members">
-		Członkowie:
+		<p>Członkowie:</p>
 		<ul>
 			<xsl:for-each select="Member">
 				<li><xsl:apply-templates/></li>
@@ -94,13 +114,10 @@
 					<th><xsl:value-of select="Length"/></th>
 					<th><xsl:value-of select="ReleaseDate"/></th>
 					<th>
-					<ul>
 						<xsl:for-each select="Genres/Genre">
-							<li>
-								<xsl:value-of select="."/>
-							</li>
-						</xsl:for-each>					
-					</ul>
+							<xsl:value-of select="."/>
+							<br/>
+						</xsl:for-each>		
 					</th>
 				</tr>
 			</xsl:for-each>
@@ -108,39 +125,43 @@
 	</xsl:template>
 	
 	<xsl:template match="Statistics">
-		<p>
-			<table>
-				<tbody>
+		<table>
+			<tbody>
+				<tr>
+					<th><b>Gatunek</b></th>
+					<th><b>Liczba albumów</b></th>
+					<th><b>Liczba utworów</b></th>
+					<th><b>Średnia liczba utworów na album</b></th>
+				</tr>
+				<xsl:for-each select="GenreQuantities/Quantity">
+					<xsl:sort select="NumberOfAlbums" order="descending" data-type="number"/>
 					<tr>
-						<th><b>Gatunek</b></th>
-						<th><b>Liczba albumów</b></th>
+						<th><xsl:value-of select="Name"/></th>
+						<th><xsl:value-of select="NumberOfAlbums"/></th>
+						<th><xsl:value-of select="NumberOfTracksTotal"/></th>
+						<th><xsl:value-of select="NumberOfTracksAverage"/></th>
 					</tr>
-					<xsl:for-each select="GenreQuantities/Quantity">
-						<xsl:sort select="Count" order="descending" data-type="number"/>
-						<tr>
-							<th><xsl:value-of select="Name"/></th>
-							<th><xsl:value-of select="Count"/></th>
-						</tr>
-					</xsl:for-each>
-				</tbody>
-			</table>
-		</p>
-		<p>
-			<table>
-				<tbody>
+				</xsl:for-each>
+			</tbody>
+		</table>
+		<table>
+			<tbody>
+				<tr>
+					<th><b>Artysta</b></th>
+					<th><b>Liczba albumów</b></th>
+					<th><b>Liczba utworów</b></th>
+					<th><b>Średnia liczba utworów na album</b></th>
+				</tr>
+				<xsl:for-each select="ArtistQuantities/Quantity">
+					<xsl:sort select="NumberOfAlbums" order="descending" data-type="number"/>
 					<tr>
-						<th><b>Artysta</b></th>
-						<th><b>Liczba albumów</b></th>
+						<th><xsl:value-of select="Name"/></th>
+						<th><xsl:value-of select="NumberOfAlbums"/></th>
+						<th><xsl:value-of select="NumberOfTracksTotal"/></th>
+						<th><xsl:value-of select="NumberOfTracksAverage"/></th>
 					</tr>
-					<xsl:for-each select="ArtistQuantities/Quantity">
-						<xsl:sort select="Count" order="descending" data-type="number"/>
-						<tr>
-							<th><xsl:value-of select="Name"/></th>
-							<th><xsl:value-of select="Count"/></th>
-						</tr>
-					</xsl:for-each>
-				</tbody>
-			</table>
-		</p>		
+				</xsl:for-each>
+			</tbody>
+		</table>
 	</xsl:template>
 </xsl:stylesheet>

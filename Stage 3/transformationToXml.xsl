@@ -15,10 +15,10 @@
 						<xsl:element name="Quantity">
 							<xsl:element name="Name">
 								<xsl:value-of select="."/>
-							</xsl:element>
+							</xsl:element> 
 							<xsl:element name="Count">
 								<xsl:value-of select="count(/Project/Collection/Albums/Album/fn:tokenize(@idGenre, '\s+')[. = $id])"/>
-							</xsl:element>
+							</xsl:element> 
 						</xsl:element>
 					</xsl:for-each>
 				</xsl:element>

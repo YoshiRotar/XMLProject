@@ -84,19 +84,25 @@
 	<xsl:template match="Members">
 		<p>Członkowie:</p>
 		<ul>
-			<xsl:for-each select="Member">
-				<li><xsl:apply-templates/></li>
-			</xsl:for-each>
+			<xsl:apply-templates/>
 		</ul>
 	</xsl:template>
 	
-	<!--<xsl:template match="Member">
-		<h3>
-			<xsl:value-of select="FirstName"/>
-			<xsl:value-of select="LastName"/>
-			<xsl:value-of select="StageName"/>
-		</h3>
-	</xsl:template>-->
+	<xsl:template match="Member[1]">
+		<li>
+			<b><xsl:apply-templates/> - frontman</b>
+		</li>
+	</xsl:template>
+	
+	<xsl:template match="Member">
+		<li>
+			<xsl:apply-templates/>
+		</li>
+	</xsl:template>
+	
+	<xsl:template match="StageName">
+		"<xsl:value-of select="."/>"
+	</xsl:template>	
 	
 	<xsl:template match="Albums">
 		<table>
@@ -125,43 +131,64 @@
 	</xsl:template>
 	
 	<xsl:template match="Statistics">
-		<table>
-			<tbody>
-				<tr>
-					<th><b>Gatunek</b></th>
-					<th><b>Liczba albumów</b></th>
-					<th><b>Liczba utworów</b></th>
-					<th><b>Średnia liczba utworów na album</b></th>
-				</tr>
-				<xsl:for-each select="GenreQuantities/Quantity">
-					<xsl:sort select="NumberOfAlbums" order="descending" data-type="number"/>
+		<div>
+			<br/>
+			<table>
+				<tbody>
 					<tr>
-						<th><xsl:value-of select="Name"/></th>
-						<th><xsl:value-of select="NumberOfAlbums"/></th>
-						<th><xsl:value-of select="NumberOfTracksTotal"/></th>
-						<th><xsl:value-of select="NumberOfTracksAverage"/></th>
+						<th><b>Gatunek</b></th>
+						<th><b>Liczba albumów</b></th>
+						<th><b>Liczba utworów</b></th>
+						<th><b>Średnia liczba utworów na album</b></th>
+						<th><b>Średnia długość albumu</b></th>
+						<th><b>Średnia długość utworu</b></th>
 					</tr>
-				</xsl:for-each>
-			</tbody>
-		</table>
-		<table>
-			<tbody>
-				<tr>
-					<th><b>Artysta</b></th>
-					<th><b>Liczba albumów</b></th>
-					<th><b>Liczba utworów</b></th>
-					<th><b>Średnia liczba utworów na album</b></th>
-				</tr>
-				<xsl:for-each select="ArtistQuantities/Quantity">
-					<xsl:sort select="NumberOfAlbums" order="descending" data-type="number"/>
+					<xsl:for-each select="GenreQuantities/Quantity">
+						<xsl:sort select="NumberOfAlbums" order="descending" data-type="number"/>
+						<tr>
+							<th><xsl:value-of select="Name"/></th>
+							<th><xsl:value-of select="NumberOfAlbums"/></th>
+							<th><xsl:value-of select="NumberOfTracksTotal"/></th>
+							<th><xsl:value-of select="NumberOfTracksAverage"/></th>
+							<th><xsl:value-of select="AverageLengthOfAlbum"/></th>
+							<th><xsl:value-of select="AverageLengthOfTrack"/></th>
+						</tr>
+					</xsl:for-each>
+				</tbody>
+			</table>
+			<br/>
+			<table>
+				<tbody>
 					<tr>
-						<th><xsl:value-of select="Name"/></th>
-						<th><xsl:value-of select="NumberOfAlbums"/></th>
-						<th><xsl:value-of select="NumberOfTracksTotal"/></th>
-						<th><xsl:value-of select="NumberOfTracksAverage"/></th>
+						<th><b>Artysta</b></th>
+						<th><b>Liczba albumów</b></th>
+						<th><b>Liczba utworów</b></th>
+						<th><b>Średnia liczba utworów na album</b></th>
+						<th><b>Średnia długość albumu</b></th>
+						<th><b>Średnia długość utworu</b></th>
 					</tr>
-				</xsl:for-each>
-			</tbody>
-		</table>
+					<xsl:for-each select="ArtistQuantities/Quantity">
+						<xsl:sort select="NumberOfAlbums" order="descending" data-type="number"/>
+						<tr>
+							<th><xsl:value-of select="Name"/></th>
+							<th><xsl:value-of select="NumberOfAlbums"/></th>
+							<th><xsl:value-of select="NumberOfTracksTotal"/></th>
+							<th><xsl:value-of select="NumberOfTracksAverage"/></th>
+							<th><xsl:value-of select="AverageLengthOfAlbum"/></th>
+							<th><xsl:value-of select="AverageLengthOfTrack"/></th>
+						</tr>
+					</xsl:for-each>
+				</tbody>
+			</table>
+		</div>
+	</xsl:template>
+	
+	<xsl:template match="RaportDate">	
+		<p>
+			<i>
+				Data wygenerowania raportu:
+				<xsl:value-of select="."/>
+			</i>
+		</p>	
 	</xsl:template>
 </xsl:stylesheet>

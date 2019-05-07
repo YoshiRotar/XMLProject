@@ -23,8 +23,8 @@
 								<xsl:value-of select="sum(/Project/Collection/Albums/Album[fn:tokenize(@idGenre, '\s+') = $id]/NumberOfTracks)"/>
 							</xsl:element>
 							<xsl:element name="NumberOfTracksAverage">
-								<xsl:value-of select="sum(/Project/Collection/Albums/Album[fn:tokenize(@idGenre, '\s+') = $id]/NumberOfTracks) div 
-								count(/Project/Collection/Albums/Album/fn:tokenize(@idGenre, '\s+')[. = $id])"/>
+								<xsl:value-of select="round(sum(/Project/Collection/Albums/Album[fn:tokenize(@idGenre, '\s+') = $id]/NumberOfTracks) div 
+								count(/Project/Collection/Albums/Album/fn:tokenize(@idGenre, '\s+')[. = $id]))"/>
 							</xsl:element>
 						</xsl:element>
 					</xsl:for-each>
@@ -43,13 +43,13 @@
 								<xsl:value-of select="sum(/Project/Collection/Albums/Album[@idArtist = $id]/NumberOfTracks)"/>
 							</xsl:element>
 							<xsl:element name="NumberOfTracksAverage">
-								<xsl:value-of select="sum(/Project/Collection/Albums/Album[@idArtist = $id]/NumberOfTracks) div 
-								count(/Project/Collection/Albums/Album/@idArtist[. = $id])"/>
+								<xsl:value-of select="round(sum(/Project/Collection/Albums/Album[@idArtist = $id]/NumberOfTracks) div 
+								count(/Project/Collection/Albums/Album/@idArtist[. = $id]))"/>
 							</xsl:element>
 						</xsl:element>
 					</xsl:for-each>
 				</xsl:element>
-				<!--<xsl:element name="AverageLengthsPerArtist">
+				<xsl:element name="AverageLengthsPerArtist">
 					<xsl:for-each select="/Project/Collection/Artists/Artist">
 						<xsl:variable name="id" select="@idArtist"/>
 						<xsl:element name="AverageLength">
@@ -64,11 +64,12 @@
 										</xsl:call-template>
 									</xsl:for-each>
 								</xsl:variable>
-								<xsl:value-of select="$intTime"/>
+                <xsl:variable name="sumOfInit" select="sum($intTime)"/>
+								<xsl:value-of select="fn:tokenize($intTime)"/>
 							</xsl:element>
 						</xsl:element>
 					</xsl:for-each>
-				</xsl:element>-->
+				</xsl:element>
 			</xsl:element>
 		</Project>
 	</xsl:template>

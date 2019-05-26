@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" version="2.0" href="transformationToXml.xsl"?>
 <Project>
 	<Head>
@@ -358,7 +358,7 @@
 			</Album>
 			<Album idArtist="A12" idGenre="G1 G18">
 				<Title>Undertow</Title>
-				<NumberOfTracks> 10 </NumberOfTracks>
+				<NumberOfTracks>10</NumberOfTracks>
 				<Length>01:09:13</Length>
 				<ReleaseDate>1993-04-06</ReleaseDate>
 			</Album>

@@ -1,0 +1,1229 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project xmlns:xs="http://www.w3.org/2001/XMLSchema"
+         xmlns:fn="http://www.w3.org/2005/xpath-functions">
+	  <Head>
+      <Title>Kolekcja Albumów Muzycznych</Title>
+      <Authors>
+         <Author>Paweł Młynarczyk 210278</Author>
+         <Author>Mateusz Kuźniarek 210245</Author>
+      </Authors>
+   </Head>
+	  <Bands>
+      <Band>
+         <BandName>Avatar</BandName>
+         <Nationality>Swedish</Nationality>
+         <Members>
+            <Member>
+               <Name>Johannes</Name>
+               <Surname>Eckerström</Surname>
+            </Member>
+            <Member>
+               <Name>Jonas</Name>
+               <StageName>Kungen</StageName>
+               <Surname>Jarlsby</Surname>
+            </Member>
+            <Member>
+               <Name>John</Name>
+               <Surname>Alfredsson</Surname>
+            </Member>
+            <Member>
+               <Name>Tim</Name>
+               <Surname>Öhrström</Surname>
+            </Member>
+            <Member>
+               <Name>Henrik</Name>
+               <Surname>Sandelin</Surname>
+            </Member>
+         </Members>
+         <Albums>
+            <Album>
+               <Title>Black Waltz</Title>
+               <NumberOfTracks>11</NumberOfTracks>
+               <Length>00:54:48</Length>
+               <ReleaseDate>2012-01-25</ReleaseDate>
+               <Genres>
+                  <Genre>Groove metal</Genre>
+                  <Genre>Melodic Death Metal</Genre>
+                  <Genre>Avant-garde Metal</Genre>
+                  <Genre>Industrial Metal</Genre>
+               </Genres>
+            </Album>
+            <Album>
+               <Title>Hail The Apocalypse</Title>
+               <NumberOfTracks>12</NumberOfTracks>
+               <Length>00:50:52</Length>
+               <ReleaseDate>2014-05-13</ReleaseDate>
+               <Genres>
+                  <Genre>Groove metal</Genre>
+                  <Genre>Melodic Death Metal</Genre>
+                  <Genre>Industrial Metal</Genre>
+                  <Genre>Progresive Metal</Genre>
+               </Genres>
+            </Album>
+            <Album>
+               <Title>Feathers &amp; Flesh</Title>
+               <NumberOfTracks>14</NumberOfTracks>
+               <Length>01:07:51</Length>
+               <ReleaseDate>2016-05-13</ReleaseDate>
+               <Genres>
+                  <Genre>Groove metal</Genre>
+                  <Genre>Melodic Death Metal</Genre>
+                  <Genre>Avant-garde Metal</Genre>
+                  <Genre>Heavy Metal</Genre>
+               </Genres>
+            </Album>
+            <Album>
+               <Title>Avatar Country</Title>
+               <NumberOfTracks>10</NumberOfTracks>
+               <Length>00:43:18</Length>
+               <ReleaseDate>2018-01-12</ReleaseDate>
+               <Genres>
+                  <Genre>Heavy Metal</Genre>
+               </Genres>
+            </Album>
+         </Albums>
+      </Band>
+      <Band>
+         <BandName>Behemoth</BandName>
+         <Nationality>Polish</Nationality>
+         <Members>
+            <Member>
+               <Name>Adam</Name>
+               <StageName>Nergal</StageName>
+               <Surname>Darski</Surname>
+            </Member>
+            <Member>
+               <Name>Zbigniew</Name>
+               <StageName>Inferno</StageName>
+               <Surname>Promiński</Surname>
+            </Member>
+            <Member>
+               <Name>Tomasz</Name>
+               <StageName>Orion</StageName>
+               <Surname>Wróblewski</Surname>
+            </Member>
+            <Member>
+               <Name>Patryk</Name>
+               <StageName>Seth</StageName>
+               <Surname>Sztyber</Surname>
+            </Member>
+         </Members>
+         <Albums>
+            <Album>
+               <Title>The Apostasy</Title>
+               <NumberOfTracks>13</NumberOfTracks>
+               <Length>00:39:39</Length>
+               <ReleaseDate>2007-07-17</ReleaseDate>
+               <Genres>
+                  <Genre>Blackend Death Metal</Genre>
+               </Genres>
+            </Album>
+            <Album>
+               <Title>Evangelion</Title>
+               <NumberOfTracks>10</NumberOfTracks>
+               <Length>00:41:54</Length>
+               <ReleaseDate>2009-08-07</ReleaseDate>
+               <Genres>
+                  <Genre>Blackend Death Metal</Genre>
+                  <Genre>Progresive Death Metal</Genre>
+                  <Genre>Symphonic Metal</Genre>
+               </Genres>
+            </Album>
+            <Album>
+               <Title>The Satanist</Title>
+               <NumberOfTracks>9</NumberOfTracks>
+               <Length>00:44:17</Length>
+               <ReleaseDate>2014-02-03</ReleaseDate>
+               <Genres>
+                  <Genre>Blackend Death Metal</Genre>
+                  <Genre>Progresive Death Metal</Genre>
+                  <Genre>Symphonic Metal</Genre>
+               </Genres>
+            </Album>
+            <Album>
+               <Title>I Loved You At Your Darkest</Title>
+               <NumberOfTracks>13</NumberOfTracks>
+               <Length>00:46:32</Length>
+               <ReleaseDate>2018-10-05</ReleaseDate>
+               <Genres>
+                  <Genre>Blackend Death Metal</Genre>
+                  <Genre>Progresive Death Metal</Genre>
+                  <Genre>Symphonic Metal</Genre>
+               </Genres>
+            </Album>
+         </Albums>
+      </Band>
+      <Band>
+         <BandName>Black Sabbath</BandName>
+         <Nationality>British</Nationality>
+         <Members>
+            <Member>
+               <Name>Ozzy</Name>
+               <Surname>Osbourne</Surname>
+            </Member>
+            <Member>
+               <Name>Tony</Name>
+               <Surname>Iommi</Surname>
+            </Member>
+            <Member>
+               <Name>Geezer</Name>
+               <Surname>Butler</Surname>
+            </Member>
+            <Member>
+               <Name>Adam</Name>
+               <Surname>Wakeman</Surname>
+            </Member>
+            <Member>
+               <Name>Tommy</Name>
+               <Surname>Clufetos</Surname>
+            </Member>
+         </Members>
+         <Albums>
+            <Album>
+               <Title>Black Sabbath</Title>
+               <NumberOfTracks>7</NumberOfTracks>
+               <Length>00:38:12</Length>
+               <ReleaseDate>1970-02-13</ReleaseDate>
+               <Genres>
+                  <Genre>Heavy Metal</Genre>
+               </Genres>
+            </Album>
+            <Album>
+               <Title>Paranoid</Title>
+               <NumberOfTracks>8</NumberOfTracks>
+               <Length>00:41:51</Length>
+               <ReleaseDate>1970-09-18</ReleaseDate>
+               <Genres>
+                  <Genre>Heavy Metal</Genre>
+               </Genres>
+            </Album>
+            <Album>
+               <Title>Master Of Reality</Title>
+               <NumberOfTracks>8</NumberOfTracks>
+               <Length>00:34:29</Length>
+               <ReleaseDate>1971-07-21</ReleaseDate>
+               <Genres>
+                  <Genre>Heavy Metal</Genre>
+               </Genres>
+            </Album>
+            <Album>
+               <Title>Heaven And Hell</Title>
+               <NumberOfTracks>8</NumberOfTracks>
+               <Length>00:39:46</Length>
+               <ReleaseDate>1980-04-25</ReleaseDate>
+               <Genres>
+                  <Genre>Heavy Metal</Genre>
+               </Genres>
+            </Album>
+            <Album>
+               <Title>Mob Rules</Title>
+               <NumberOfTracks>9</NumberOfTracks>
+               <Length>00:40:25</Length>
+               <ReleaseDate>1981-11-04</ReleaseDate>
+               <Genres>
+                  <Genre>Heavy Metal</Genre>
+               </Genres>
+            </Album>
+            <Album>
+               <Title>Born Again</Title>
+               <NumberOfTracks>9</NumberOfTracks>
+               <Length>00:41:04</Length>
+               <ReleaseDate>1983-08-07</ReleaseDate>
+               <Genres>
+                  <Genre>Heavy Metal</Genre>
+               </Genres>
+            </Album>
+            <Album>
+               <Title>The Eternal Idol</Title>
+               <NumberOfTracks>9</NumberOfTracks>
+               <Length>00:42:42</Length>
+               <ReleaseDate>1987-11-23</ReleaseDate>
+               <Genres>
+                  <Genre>Heavy Metal</Genre>
+               </Genres>
+            </Album>
+            <Album>
+               <Title>Headless Cross</Title>
+               <NumberOfTracks>9</NumberOfTracks>
+               <Length>00:40:24</Length>
+               <ReleaseDate>1989-04-24</ReleaseDate>
+               <Genres>
+                  <Genre>Heavy Metal</Genre>
+                  <Genre>Doom Metal</Genre>
+               </Genres>
+            </Album>
+            <Album>
+               <Title>Tyr</Title>
+               <NumberOfTracks>9</NumberOfTracks>
+               <Length>00:39:16</Length>
+               <ReleaseDate>1990-08-20</ReleaseDate>
+               <Genres>
+                  <Genre>Heavy Metal</Genre>
+               </Genres>
+            </Album>
+            <Album>
+               <Title>Cross Purposes</Title>
+               <NumberOfTracks>11</NumberOfTracks>
+               <Length>00:47:27</Length>
+               <ReleaseDate>1994-01-26</ReleaseDate>
+               <Genres>
+                  <Genre>Heavy Metal</Genre>
+               </Genres>
+            </Album>
+         </Albums>
+      </Band>
+      <Band>
+         <BandName>Ghost</BandName>
+         <Nationality>Swedish</Nationality>
+         <Members>
+            <Member>
+               <Name>Tobias</Name>
+               <StageName>Cardinal Copia</StageName>
+               <Surname>Forge</Surname>
+            </Member>
+            <Member>
+               <StageName>Fire</StageName>
+            </Member>
+            <Member>
+               <StageName>Water</StageName>
+            </Member>
+            <Member>
+               <StageName>Air</StageName>
+            </Member>
+            <Member>
+               <StageName>Earth</StageName>
+            </Member>
+            <Member>
+               <StageName>Ether</StageName>
+            </Member>
+            <Member>
+               <StageName>Multighoul</StageName>
+            </Member>
+            <Member>
+               <StageName>Papa Nihil</StageName>
+            </Member>
+         </Members>
+         <Albums>
+            <Album>
+               <Title>Opus Eponymous</Title>
+               <NumberOfTracks>9</NumberOfTracks>
+               <Length>00:34:41</Length>
+               <ReleaseDate>2010-10-18</ReleaseDate>
+               <Genres>
+                  <Genre>Heavy Metal</Genre>
+                  <Genre>Doom Metal</Genre>
+                  <Genre>Hard Rock</Genre>
+               </Genres>
+            </Album>
+            <Album>
+               <Title>Infestissumam</Title>
+               <NumberOfTracks>10</NumberOfTracks>
+               <Length>00:47:47</Length>
+               <ReleaseDate>2013-04-10</ReleaseDate>
+               <Genres>
+                  <Genre>Heavy Metal</Genre>
+                  <Genre>Doom Metal</Genre>
+                  <Genre>Progresive Rock</Genre>
+               </Genres>
+            </Album>
+            <Album>
+               <Title>If You Have Ghost</Title>
+               <NumberOfTracks>5</NumberOfTracks>
+               <Length>00:24:41</Length>
+               <ReleaseDate>2013-11-20</ReleaseDate>
+               <Genres>
+                  <Genre>Heavy Metal</Genre>
+                  <Genre>Doom Metal</Genre>
+               </Genres>
+            </Album>
+            <Album>
+               <Title>Meliora</Title>
+               <NumberOfTracks>10</NumberOfTracks>
+               <Length>00:41:35</Length>
+               <ReleaseDate>2015-08-21</ReleaseDate>
+               <Genres>
+                  <Genre>Heavy Metal</Genre>
+                  <Genre>Doom Metal</Genre>
+                  <Genre>Progresive Rock</Genre>
+                  <Genre>Hard Rock</Genre>
+               </Genres>
+            </Album>
+            <Album>
+               <Title>Popestar</Title>
+               <NumberOfTracks>5</NumberOfTracks>
+               <Length>00:23:37</Length>
+               <ReleaseDate>2016-09-16</ReleaseDate>
+               <Genres>
+                  <Genre>Heavy Metal</Genre>
+                  <Genre>Doom Metal</Genre>
+                  <Genre>Hard Rock</Genre>
+                  <Genre>Progresive Rock</Genre>
+               </Genres>
+            </Album>
+            <Album>
+               <Title>Prequelle</Title>
+               <NumberOfTracks>10</NumberOfTracks>
+               <Length>00:41:43</Length>
+               <ReleaseDate>2018-06-01</ReleaseDate>
+               <Genres>
+                  <Genre>Hard Rock</Genre>
+                  <Genre>Heavy Metal</Genre>
+                  <Genre>Doom Metal</Genre>
+                  <Genre>Progresive Rock</Genre>
+               </Genres>
+            </Album>
+         </Albums>
+      </Band>
+      <Band>
+         <BandName>Greta Van Fleet</BandName>
+         <Nationality>American</Nationality>
+         <Members>
+            <Member>
+               <Name>Josh</Name>
+               <Surname>Kiszka</Surname>
+            </Member>
+            <Member>
+               <Name>Jake</Name>
+               <Surname>Kiszka</Surname>
+            </Member>
+            <Member>
+               <Name>Sam</Name>
+               <Surname>Kiszka</Surname>
+            </Member>
+            <Member>
+               <Name>Danny</Name>
+               <Surname>Wagner</Surname>
+            </Member>
+         </Members>
+         <Albums>
+            <Album>
+               <Title>From The Fires</Title>
+               <NumberOfTracks>8</NumberOfTracks>
+               <Length>00:32:15</Length>
+               <ReleaseDate>2017-11-10</ReleaseDate>
+               <Genres>
+                  <Genre>Hard Rock</Genre>
+                  <Genre>Blues Rock</Genre>
+               </Genres>
+            </Album>
+            <Album>
+               <Title>Anthem Of The Peaceful Army</Title>
+               <NumberOfTracks>10</NumberOfTracks>
+               <Length>00:45:53</Length>
+               <ReleaseDate>2018-10-19</ReleaseDate>
+               <Genres>
+                  <Genre>Hard Rock</Genre>
+                  <Genre>Blues Rock</Genre>
+                  <Genre>Progresive Rock</Genre>
+               </Genres>
+            </Album>
+         </Albums>
+      </Band>
+      <Band>
+         <BandName>Iron Maiden</BandName>
+         <Nationality>British</Nationality>
+         <Members>
+            <Member>
+               <Name>Bruce</Name>
+               <Surname>Dickinson</Surname>
+            </Member>
+            <Member>
+               <Name>Steve</Name>
+               <Surname>Harris</Surname>
+            </Member>
+            <Member>
+               <Name>Dave</Name>
+               <Surname>Murray</Surname>
+            </Member>
+            <Member>
+               <Name>Adrian</Name>
+               <Surname>Smith</Surname>
+            </Member>
+            <Member>
+               <Name>Nicko</Name>
+               <Surname>McBrain</Surname>
+            </Member>
+            <Member>
+               <Name>Janick</Name>
+               <Surname>Gers</Surname>
+            </Member>
+         </Members>
+         <Albums>
+            <Album>
+               <Title>The Number Of The Beast</Title>
+               <NumberOfTracks>9</NumberOfTracks>
+               <Length>00:44:39</Length>
+               <ReleaseDate>1982-03-22</ReleaseDate>
+               <Genres>
+                  <Genre>Heavy Metal</Genre>
+               </Genres>
+            </Album>
+            <Album>
+               <Title>Piece Of Mind</Title>
+               <NumberOfTracks>9</NumberOfTracks>
+               <Length>00:45:18</Length>
+               <ReleaseDate>1983-05-16</ReleaseDate>
+               <Genres>
+                  <Genre>Heavy Metal</Genre>
+               </Genres>
+            </Album>
+            <Album>
+               <Title>Powerslave</Title>
+               <NumberOfTracks>8</NumberOfTracks>
+               <Length>00:51:12</Length>
+               <ReleaseDate>1984-09-03</ReleaseDate>
+               <Genres>
+                  <Genre>Heavy Metal</Genre>
+               </Genres>
+            </Album>
+            <Album>
+               <Title>Fear Of The Dark</Title>
+               <NumberOfTracks>12</NumberOfTracks>
+               <Length>00:57:58</Length>
+               <ReleaseDate>1992-05-11</ReleaseDate>
+               <Genres>
+                  <Genre>Heavy Metal</Genre>
+               </Genres>
+            </Album>
+            <Album>
+               <Title>Brave New World</Title>
+               <NumberOfTracks>10</NumberOfTracks>
+               <Length>01:06:57</Length>
+               <ReleaseDate>2000-05-29</ReleaseDate>
+               <Genres>
+                  <Genre>Heavy Metal</Genre>
+               </Genres>
+            </Album>
+            <Album>
+               <Title>A Matter Of Life And Death</Title>
+               <NumberOfTracks>10</NumberOfTracks>
+               <Length>01:11:53</Length>
+               <ReleaseDate>2006-08-25</ReleaseDate>
+               <Genres>
+                  <Genre>Heavy Metal</Genre>
+               </Genres>
+            </Album>
+            <Album>
+               <Title>The Book Of Souls</Title>
+               <NumberOfTracks>11</NumberOfTracks>
+               <Length>01:32:11</Length>
+               <ReleaseDate>2015-09-04</ReleaseDate>
+               <Genres>
+                  <Genre>Heavy Metal</Genre>
+               </Genres>
+            </Album>
+         </Albums>
+      </Band>
+      <Band>
+         <BandName>Mgła</BandName>
+         <Nationality>Polish</Nationality>
+         <Members>
+            <Member>
+               <Name>Mikołaj</Name>
+               <StageName>M.</StageName>
+               <Surname>Żentara</Surname>
+            </Member>
+            <Member>
+               <Name>Maciej</Name>
+               <StageName>Darkside</StageName>
+               <Surname>Kowalski</Surname>
+            </Member>
+         </Members>
+         <Albums>
+            <Album>
+               <Title>Exercises In Futility</Title>
+               <NumberOfTracks>6</NumberOfTracks>
+               <Length>00:42:12</Length>
+               <ReleaseDate>2015-09-04</ReleaseDate>
+               <Genres>
+                  <Genre>Black Metal</Genre>
+               </Genres>
+            </Album>
+         </Albums>
+      </Band>
+      <Band>
+         <BandName>A Perfect Circle</BandName>
+         <Nationality>American</Nationality>
+         <Members>
+            <Member>
+               <Name>Maynard</Name>
+               <Name>James</Name>
+               <Surname>Keenan</Surname>
+            </Member>
+            <Member>
+               <Name>Billy</Name>
+               <Surname>Howerdel</Surname>
+            </Member>
+            <Member>
+               <Name>James</Name>
+               <Surname>Iha</Surname>
+            </Member>
+            <Member>
+               <Name>Matt</Name>
+               <Surname>McJunkins</Surname>
+            </Member>
+            <Member>
+               <Name>Jeff</Name>
+               <Surname>Friedl</Surname>
+            </Member>
+         </Members>
+         <Albums>
+            <Album>
+               <Title>Mer De Noms</Title>
+               <NumberOfTracks>12</NumberOfTracks>
+               <Length>00:44:25</Length>
+               <ReleaseDate>2000-05-23</ReleaseDate>
+               <Genres>
+                  <Genre>Alternative Metal</Genre>
+                  <Genre>Alternative Rock</Genre>
+                  <Genre>Hard Rock</Genre>
+                  <Genre>Progresive Rock</Genre>
+                  <Genre>Art Rock</Genre>
+               </Genres>
+            </Album>
+            <Album>
+               <Title>Thirteenth Step</Title>
+               <NumberOfTracks>12</NumberOfTracks>
+               <Length>00:50:36</Length>
+               <ReleaseDate>2003-09-16</ReleaseDate>
+               <Genres>
+                  <Genre>Alternative Rock</Genre>
+                  <Genre>Hard Rock</Genre>
+                  <Genre>Art Rock</Genre>
+               </Genres>
+            </Album>
+            <Album>
+               <Title>eMOTIVe</Title>
+               <NumberOfTracks>12</NumberOfTracks>
+               <Length>00:48:13</Length>
+               <ReleaseDate>2004-11-01</ReleaseDate>
+               <Genres>
+                  <Genre>Alternative Rock</Genre>
+                  <Genre>Art Rock</Genre>
+               </Genres>
+            </Album>
+            <Album>
+               <Title>Eat The Elephant</Title>
+               <NumberOfTracks>12</NumberOfTracks>
+               <Length>00:57:07</Length>
+               <ReleaseDate>2018-04-20</ReleaseDate>
+               <Genres>
+                  <Genre>Progresive Rock</Genre>
+                  <Genre>Post-Rock</Genre>
+                  <Genre>Hard Rock</Genre>
+               </Genres>
+            </Album>
+         </Albums>
+      </Band>
+      <Band>
+         <BandName>Powerwolf</BandName>
+         <Nationality>German</Nationality>
+         <Members>
+            <Member>
+               <Name>Karsten</Name>
+               <StageName>Attila Dorn</StageName>
+               <Surname>Brill</Surname>
+            </Member>
+            <Member>
+               <Name>Benjamin</Name>
+               <StageName>Matthew Greywolf</StageName>
+               <Surname>Buss</Surname>
+            </Member>
+            <Member>
+               <Name>David</Name>
+               <StageName>Charles Greywolf</StageName>
+               <Surname>Kowalski</Surname>
+            </Member>
+            <Member>
+               <Name>Falk</Name>
+               <Name>Maria</Name>
+               <Surname>Schlegel</Surname>
+            </Member>
+            <Member>
+               <Name>Roel</Name>
+               <Surname>van Helden</Surname>
+            </Member>
+         </Members>
+         <Albums>
+            <Album>
+               <Title>Return In Bloodred</Title>
+               <NumberOfTracks>9</NumberOfTracks>
+               <Length>00:40:00</Length>
+               <ReleaseDate>2005-04-04</ReleaseDate>
+               <Genres>
+                  <Genre>Power Metal</Genre>
+                  <Genre>Heavy Metal</Genre>
+               </Genres>
+            </Album>
+            <Album>
+               <Title>Lupus Dei</Title>
+               <NumberOfTracks>11</NumberOfTracks>
+               <Length>00:43:31</Length>
+               <ReleaseDate>2007-05-07</ReleaseDate>
+               <Genres>
+                  <Genre>Power Metal</Genre>
+                  <Genre>Heavy Metal</Genre>
+               </Genres>
+            </Album>
+            <Album>
+               <Title>Bible Of The Beast</Title>
+               <NumberOfTracks>12</NumberOfTracks>
+               <Length>00:47:36</Length>
+               <ReleaseDate>2009-04-24</ReleaseDate>
+               <Genres>
+                  <Genre>Power Metal</Genre>
+                  <Genre>Heavy Metal</Genre>
+               </Genres>
+            </Album>
+            <Album>
+               <Title>Blood Of The Saints</Title>
+               <NumberOfTracks>11</NumberOfTracks>
+               <Length>00:41:46</Length>
+               <ReleaseDate>2011-07-29</ReleaseDate>
+               <Genres>
+                  <Genre>Power Metal</Genre>
+                  <Genre>Heavy Metal</Genre>
+               </Genres>
+            </Album>
+            <Album>
+               <Title>Preachers Of The Night</Title>
+               <NumberOfTracks>11</NumberOfTracks>
+               <Length>00:45:32</Length>
+               <ReleaseDate>2013-07-19</ReleaseDate>
+               <Genres>
+                  <Genre>Power Metal</Genre>
+                  <Genre>Heavy Metal</Genre>
+               </Genres>
+            </Album>
+            <Album>
+               <Title>Blessed &amp; Possessed</Title>
+               <NumberOfTracks>11</NumberOfTracks>
+               <Length>00:45:42</Length>
+               <ReleaseDate>2015-07-17</ReleaseDate>
+               <Genres>
+                  <Genre>Power Metal</Genre>
+                  <Genre>Speed Metal</Genre>
+               </Genres>
+            </Album>
+            <Album>
+               <Title>The Sacrament Of Sin</Title>
+               <NumberOfTracks>11</NumberOfTracks>
+               <Length>00:42:42</Length>
+               <ReleaseDate>2018-07-20</ReleaseDate>
+               <Genres>
+                  <Genre>Power Metal</Genre>
+                  <Genre>Symphonic Metal</Genre>
+               </Genres>
+            </Album>
+         </Albums>
+      </Band>
+      <Band>
+         <BandName>Slipknot</BandName>
+         <Nationality>American</Nationality>
+         <Members>
+            <Member>
+               <Name>Corey</Name>
+               <StageName>#8</StageName>
+               <Surname>Taylor</Surname>
+            </Member>
+            <Member>
+               <Name>Shawn</Name>
+               <StageName>#6</StageName>
+               <Surname>Crahan</Surname>
+            </Member>
+            <Member>
+               <Name>Craig</Name>
+               <StageName>#5</StageName>
+               <Surname>Jones</Surname>
+            </Member>
+            <Member>
+               <Name>Mick</Name>
+               <StageName>#7</StageName>
+               <Surname>Thomson</Surname>
+            </Member>
+            <Member>
+               <Name>Sid</Name>
+               <StageName>#0</StageName>
+               <Surname>Wilson</Surname>
+            </Member>
+            <Member>
+               <Name>Chris</Name>
+               <StageName>#3</StageName>
+               <Surname>Fehn</Surname>
+            </Member>
+            <Member>
+               <Name>Jim</Name>
+               <StageName>#4</StageName>
+               <Surname>Root</Surname>
+            </Member>
+            <Member>
+               <Name>Alessandro</Name>
+               <Surname>Venturella</Surname>
+            </Member>
+            <Member>
+               <Name>Jay</Name>
+               <Surname>Weinberg</Surname>
+            </Member>
+         </Members>
+         <Albums>
+            <Album>
+               <Title>Slipknot</Title>
+               <NumberOfTracks>15</NumberOfTracks>
+               <Length>01:00:26</Length>
+               <ReleaseDate>1999-06-29</ReleaseDate>
+               <Genres>
+                  <Genre>Nu Metal</Genre>
+               </Genres>
+            </Album>
+            <Album>
+               <Title>Iowa</Title>
+               <NumberOfTracks>14</NumberOfTracks>
+               <Length>01:06:19</Length>
+               <ReleaseDate>2001-08-28</ReleaseDate>
+               <Genres>
+                  <Genre>Nu Metal</Genre>
+               </Genres>
+            </Album>
+            <Album>
+               <Title>Vol.3: (The Subliminal Verses)</Title>
+               <NumberOfTracks>14</NumberOfTracks>
+               <Length>01:00:09</Length>
+               <ReleaseDate>2004-05-21</ReleaseDate>
+               <Genres>
+                  <Genre>Nu Metal</Genre>
+                  <Genre>Alternative Metal</Genre>
+               </Genres>
+            </Album>
+            <Album>
+               <Title>All Hope Is Gone</Title>
+               <NumberOfTracks>12</NumberOfTracks>
+               <Length>00:57:57</Length>
+               <ReleaseDate>2008-08-20</ReleaseDate>
+               <Genres>
+                  <Genre>Groove metal</Genre>
+               </Genres>
+            </Album>
+            <Album>
+               <Title>.5: The Gray Chapter</Title>
+               <NumberOfTracks>14</NumberOfTracks>
+               <Length>01:03:51</Length>
+               <ReleaseDate>2014-10-17</ReleaseDate>
+               <Genres>
+                  <Genre>Heavy Metal</Genre>
+                  <Genre>Nu Metal</Genre>
+               </Genres>
+            </Album>
+         </Albums>
+      </Band>
+      <Band>
+         <BandName>System Of A Down</BandName>
+         <Nationality>American</Nationality>
+         <Members>
+            <Member>
+               <Name>Serj</Name>
+               <Surname>Tankian</Surname>
+            </Member>
+            <Member>
+               <Name>Daron</Name>
+               <Surname>Malakian</Surname>
+            </Member>
+            <Member>
+               <Name>Shavo</Name>
+               <Surname>Odadjian</Surname>
+            </Member>
+            <Member>
+               <Name>John</Name>
+               <Surname>Dolmayan</Surname>
+            </Member>
+         </Members>
+         <Albums>
+            <Album>
+               <Title>System Of A Down</Title>
+               <NumberOfTracks>13</NumberOfTracks>
+               <Length>00:40:36</Length>
+               <ReleaseDate>1998-06-30</ReleaseDate>
+               <Genres>
+                  <Genre>Alternative Metal</Genre>
+                  <Genre>Nu Metal</Genre>
+                  <Genre>Speed Metal</Genre>
+               </Genres>
+            </Album>
+            <Album>
+               <Title>Toxicity</Title>
+               <NumberOfTracks>14</NumberOfTracks>
+               <Length>00:44:01</Length>
+               <ReleaseDate>2001-08-27</ReleaseDate>
+               <Genres>
+                  <Genre>Alternative Metal</Genre>
+                  <Genre>Nu Metal</Genre>
+               </Genres>
+            </Album>
+            <Album>
+               <Title>Steal This Album!</Title>
+               <NumberOfTracks>16</NumberOfTracks>
+               <Length>00:43:22</Length>
+               <ReleaseDate>2002-11-26</ReleaseDate>
+               <Genres>
+                  <Genre>Alternative Metal</Genre>
+                  <Genre>Nu Metal</Genre>
+                  <Genre>Speed Metal</Genre>
+               </Genres>
+            </Album>
+            <Album>
+               <Title>Mezmerize</Title>
+               <NumberOfTracks>11</NumberOfTracks>
+               <Length>00:36:06</Length>
+               <ReleaseDate>2005-05-17</ReleaseDate>
+               <Genres>
+                  <Genre>Nu Metal</Genre>
+               </Genres>
+            </Album>
+            <Album>
+               <Title>Hypnotize</Title>
+               <NumberOfTracks>12</NumberOfTracks>
+               <Length>00:39:40</Length>
+               <ReleaseDate>2005-11-22</ReleaseDate>
+               <Genres>
+                  <Genre>Heavy Metal</Genre>
+                  <Genre>Hard Rock</Genre>
+               </Genres>
+            </Album>
+         </Albums>
+      </Band>
+      <Band>
+         <BandName>Tool</BandName>
+         <Nationality>American</Nationality>
+         <Members>
+            <Member>
+               <Name>Maynard</Name>
+               <Name>James</Name>
+               <Surname>Keenan</Surname>
+            </Member>
+            <Member>
+               <Name>Danny</Name>
+               <Surname>Carey</Surname>
+            </Member>
+            <Member>
+               <Name>Adam</Name>
+               <Surname>Jones</Surname>
+            </Member>
+            <Member>
+               <Name>Justin</Name>
+               <Surname>Chancellor</Surname>
+            </Member>
+         </Members>
+         <Albums>
+            <Album>
+               <Title>Undertow</Title>
+               <NumberOfTracks>10</NumberOfTracks>
+               <Length>01:09:13</Length>
+               <ReleaseDate>1993-04-06</ReleaseDate>
+               <Genres>
+                  <Genre>Alternative Metal</Genre>
+                  <Genre>Progresive Metal</Genre>
+               </Genres>
+            </Album>
+            <Album>
+               <Title>Aenima</Title>
+               <NumberOfTracks>15</NumberOfTracks>
+               <Length>01:17:18</Length>
+               <ReleaseDate>1996-09-17</ReleaseDate>
+               <Genres>
+                  <Genre>Alternative Metal</Genre>
+                  <Genre>Progresive Metal</Genre>
+               </Genres>
+            </Album>
+            <Album>
+               <Title>Lateralus</Title>
+               <NumberOfTracks>13</NumberOfTracks>
+               <Length>01:18:56</Length>
+               <ReleaseDate>2001-05-15</ReleaseDate>
+               <Genres>
+                  <Genre>Progresive Metal</Genre>
+                  <Genre>Progresive Rock</Genre>
+               </Genres>
+            </Album>
+            <Album>
+               <Title>10,000 Days</Title>
+               <NumberOfTracks>11</NumberOfTracks>
+               <Length>01:15:52</Length>
+               <ReleaseDate>2006-04-28</ReleaseDate>
+               <Genres>
+                  <Genre>Progresive Metal</Genre>
+               </Genres>
+            </Album>
+         </Albums>
+      </Band>
+   </Bands>
+   <Statistics>
+      <GenreQuantities>
+         <Quantity>
+            <Name>Alternative Metal</Name>
+            <NumberOfAlbums>7</NumberOfAlbums>
+            <NumberOfTracksTotal>94</NumberOfTracksTotal>
+            <NumberOfTracksAverage>13</NumberOfTracksAverage>
+            <AverageLengthOfAlbum>00:54:09</AverageLengthOfAlbum>
+            <AverageLengthOfTrack>00:04:02</AverageLengthOfTrack>
+         </Quantity>
+         <Quantity>
+            <Name>Alternative Rock</Name>
+            <NumberOfAlbums>3</NumberOfAlbums>
+            <NumberOfTracksTotal>36</NumberOfTracksTotal>
+            <NumberOfTracksAverage>12</NumberOfTracksAverage>
+            <AverageLengthOfAlbum>00:47:45</AverageLengthOfAlbum>
+            <AverageLengthOfTrack>00:03:59</AverageLengthOfTrack>
+         </Quantity>
+         <Quantity>
+            <Name>Art Rock</Name>
+            <NumberOfAlbums>3</NumberOfAlbums>
+            <NumberOfTracksTotal>36</NumberOfTracksTotal>
+            <NumberOfTracksAverage>12</NumberOfTracksAverage>
+            <AverageLengthOfAlbum>00:47:45</AverageLengthOfAlbum>
+            <AverageLengthOfTrack>00:03:59</AverageLengthOfTrack>
+         </Quantity>
+         <Quantity>
+            <Name>Avant-garde Metal</Name>
+            <NumberOfAlbums>2</NumberOfAlbums>
+            <NumberOfTracksTotal>25</NumberOfTracksTotal>
+            <NumberOfTracksAverage>13</NumberOfTracksAverage>
+            <AverageLengthOfAlbum>01:01:20</AverageLengthOfAlbum>
+            <AverageLengthOfTrack>00:04:54</AverageLengthOfTrack>
+         </Quantity>
+         <Quantity>
+            <Name>Black Metal</Name>
+            <NumberOfAlbums>1</NumberOfAlbums>
+            <NumberOfTracksTotal>6</NumberOfTracksTotal>
+            <NumberOfTracksAverage>6</NumberOfTracksAverage>
+            <AverageLengthOfAlbum>00:42:12</AverageLengthOfAlbum>
+            <AverageLengthOfTrack>00:07:02</AverageLengthOfTrack>
+         </Quantity>
+         <Quantity>
+            <Name>Blackend Death Metal</Name>
+            <NumberOfAlbums>4</NumberOfAlbums>
+            <NumberOfTracksTotal>45</NumberOfTracksTotal>
+            <NumberOfTracksAverage>11</NumberOfTracksAverage>
+            <AverageLengthOfAlbum>00:43:06</AverageLengthOfAlbum>
+            <AverageLengthOfTrack>00:03:50</AverageLengthOfTrack>
+         </Quantity>
+         <Quantity>
+            <Name>Blues Rock</Name>
+            <NumberOfAlbums>2</NumberOfAlbums>
+            <NumberOfTracksTotal>18</NumberOfTracksTotal>
+            <NumberOfTracksAverage>9</NumberOfTracksAverage>
+            <AverageLengthOfAlbum>00:39:04</AverageLengthOfAlbum>
+            <AverageLengthOfTrack>00:04:20</AverageLengthOfTrack>
+         </Quantity>
+         <Quantity>
+            <Name>Doom Metal</Name>
+            <NumberOfAlbums>7</NumberOfAlbums>
+            <NumberOfTracksTotal>58</NumberOfTracksTotal>
+            <NumberOfTracksAverage>8</NumberOfTracksAverage>
+            <AverageLengthOfAlbum>00:36:21</AverageLengthOfAlbum>
+            <AverageLengthOfTrack>00:04:23</AverageLengthOfTrack>
+         </Quantity>
+         <Quantity>
+            <Name>Groove metal</Name>
+            <NumberOfAlbums>4</NumberOfAlbums>
+            <NumberOfTracksTotal>49</NumberOfTracksTotal>
+            <NumberOfTracksAverage>12</NumberOfTracksAverage>
+            <AverageLengthOfAlbum>00:57:52</AverageLengthOfAlbum>
+            <AverageLengthOfTrack>00:04:43</AverageLengthOfTrack>
+         </Quantity>
+         <Quantity>
+            <Name>Hard Rock</Name>
+            <NumberOfAlbums>10</NumberOfAlbums>
+            <NumberOfTracksTotal>100</NumberOfTracksTotal>
+            <NumberOfTracksAverage>10</NumberOfTracksAverage>
+            <AverageLengthOfAlbum>00:41:09</AverageLengthOfAlbum>
+            <AverageLengthOfTrack>00:04:07</AverageLengthOfTrack>
+         </Quantity>
+         <Quantity>
+            <Name>Heavy Metal</Name>
+            <NumberOfAlbums>32</NumberOfAlbums>
+            <NumberOfTracksTotal>309</NumberOfTracksTotal>
+            <NumberOfTracksAverage>10</NumberOfTracksAverage>
+            <AverageLengthOfAlbum>00:46:20</AverageLengthOfAlbum>
+            <AverageLengthOfTrack>00:04:48</AverageLengthOfTrack>
+         </Quantity>
+         <Quantity>
+            <Name>Industrial Metal</Name>
+            <NumberOfAlbums>2</NumberOfAlbums>
+            <NumberOfTracksTotal>23</NumberOfTracksTotal>
+            <NumberOfTracksAverage>12</NumberOfTracksAverage>
+            <AverageLengthOfAlbum>00:52:50</AverageLengthOfAlbum>
+            <AverageLengthOfTrack>00:04:36</AverageLengthOfTrack>
+         </Quantity>
+         <Quantity>
+            <Name>Melodic Death Metal</Name>
+            <NumberOfAlbums>3</NumberOfAlbums>
+            <NumberOfTracksTotal>37</NumberOfTracksTotal>
+            <NumberOfTracksAverage>12</NumberOfTracksAverage>
+            <AverageLengthOfAlbum>00:57:50</AverageLengthOfAlbum>
+            <AverageLengthOfTrack>00:04:41</AverageLengthOfTrack>
+         </Quantity>
+         <Quantity>
+            <Name>Nu Metal</Name>
+            <NumberOfAlbums>8</NumberOfAlbums>
+            <NumberOfTracksTotal>111</NumberOfTracksTotal>
+            <NumberOfTracksAverage>14</NumberOfTracksAverage>
+            <AverageLengthOfAlbum>00:51:51</AverageLengthOfAlbum>
+            <AverageLengthOfTrack>00:03:44</AverageLengthOfTrack>
+         </Quantity>
+         <Quantity>
+            <Name>Post-Rock</Name>
+            <NumberOfAlbums>1</NumberOfAlbums>
+            <NumberOfTracksTotal>12</NumberOfTracksTotal>
+            <NumberOfTracksAverage>12</NumberOfTracksAverage>
+            <AverageLengthOfAlbum>00:57:07</AverageLengthOfAlbum>
+            <AverageLengthOfTrack>00:04:46</AverageLengthOfTrack>
+         </Quantity>
+         <Quantity>
+            <Name>Power Metal</Name>
+            <NumberOfAlbums>7</NumberOfAlbums>
+            <NumberOfTracksTotal>76</NumberOfTracksTotal>
+            <NumberOfTracksAverage>11</NumberOfTracksAverage>
+            <AverageLengthOfAlbum>00:43:50</AverageLengthOfAlbum>
+            <AverageLengthOfTrack>00:04:02</AverageLengthOfTrack>
+         </Quantity>
+         <Quantity>
+            <Name>Progresive Death Metal</Name>
+            <NumberOfAlbums>3</NumberOfAlbums>
+            <NumberOfTracksTotal>32</NumberOfTracksTotal>
+            <NumberOfTracksAverage>11</NumberOfTracksAverage>
+            <AverageLengthOfAlbum>00:44:14</AverageLengthOfAlbum>
+            <AverageLengthOfTrack>00:04:09</AverageLengthOfTrack>
+         </Quantity>
+         <Quantity>
+            <Name>Progresive Metal</Name>
+            <NumberOfAlbums>5</NumberOfAlbums>
+            <NumberOfTracksTotal>61</NumberOfTracksTotal>
+            <NumberOfTracksAverage>12</NumberOfTracksAverage>
+            <AverageLengthOfAlbum>01:10:26</AverageLengthOfAlbum>
+            <AverageLengthOfTrack>00:05:46</AverageLengthOfTrack>
+         </Quantity>
+         <Quantity>
+            <Name>Progresive Rock</Name>
+            <NumberOfAlbums>8</NumberOfAlbums>
+            <NumberOfTracksTotal>82</NumberOfTracksTotal>
+            <NumberOfTracksAverage>10</NumberOfTracksAverage>
+            <AverageLengthOfAlbum>00:47:38</AverageLengthOfAlbum>
+            <AverageLengthOfTrack>00:04:39</AverageLengthOfTrack>
+         </Quantity>
+         <Quantity>
+            <Name>Speed Metal</Name>
+            <NumberOfAlbums>3</NumberOfAlbums>
+            <NumberOfTracksTotal>40</NumberOfTracksTotal>
+            <NumberOfTracksAverage>13</NumberOfTracksAverage>
+            <AverageLengthOfAlbum>00:43:13</AverageLengthOfAlbum>
+            <AverageLengthOfTrack>00:03:15</AverageLengthOfTrack>
+         </Quantity>
+         <Quantity>
+            <Name>Symphonic Metal</Name>
+            <NumberOfAlbums>4</NumberOfAlbums>
+            <NumberOfTracksTotal>43</NumberOfTracksTotal>
+            <NumberOfTracksAverage>11</NumberOfTracksAverage>
+            <AverageLengthOfAlbum>00:43:51</AverageLengthOfAlbum>
+            <AverageLengthOfTrack>00:04:05</AverageLengthOfTrack>
+         </Quantity>
+      </GenreQuantities>
+      <ArtistQuantities>
+         <Quantity>
+            <Name>Avatar</Name>
+            <NumberOfAlbums>4</NumberOfAlbums>
+            <NumberOfTracksTotal>47</NumberOfTracksTotal>
+            <NumberOfTracksAverage>12</NumberOfTracksAverage>
+            <AverageLengthOfAlbum>00:54:12</AverageLengthOfAlbum>
+            <AverageLengthOfTrack>00:04:37</AverageLengthOfTrack>
+         </Quantity>
+         <Quantity>
+            <Name>Behemoth</Name>
+            <NumberOfAlbums>4</NumberOfAlbums>
+            <NumberOfTracksTotal>45</NumberOfTracksTotal>
+            <NumberOfTracksAverage>11</NumberOfTracksAverage>
+            <AverageLengthOfAlbum>00:43:06</AverageLengthOfAlbum>
+            <AverageLengthOfTrack>00:03:50</AverageLengthOfTrack>
+         </Quantity>
+         <Quantity>
+            <Name>Black Sabbath</Name>
+            <NumberOfAlbums>10</NumberOfAlbums>
+            <NumberOfTracksTotal>87</NumberOfTracksTotal>
+            <NumberOfTracksAverage>9</NumberOfTracksAverage>
+            <AverageLengthOfAlbum>00:40:34</AverageLengthOfAlbum>
+            <AverageLengthOfTrack>00:04:40</AverageLengthOfTrack>
+         </Quantity>
+         <Quantity>
+            <Name>Ghost</Name>
+            <NumberOfAlbums>6</NumberOfAlbums>
+            <NumberOfTracksTotal>49</NumberOfTracksTotal>
+            <NumberOfTracksAverage>8</NumberOfTracksAverage>
+            <AverageLengthOfAlbum>00:35:41</AverageLengthOfAlbum>
+            <AverageLengthOfTrack>00:04:22</AverageLengthOfTrack>
+         </Quantity>
+         <Quantity>
+            <Name>Greta Van Fleet</Name>
+            <NumberOfAlbums>2</NumberOfAlbums>
+            <NumberOfTracksTotal>18</NumberOfTracksTotal>
+            <NumberOfTracksAverage>9</NumberOfTracksAverage>
+            <AverageLengthOfAlbum>00:39:04</AverageLengthOfAlbum>
+            <AverageLengthOfTrack>00:04:20</AverageLengthOfTrack>
+         </Quantity>
+         <Quantity>
+            <Name>Iron Maiden</Name>
+            <NumberOfAlbums>7</NumberOfAlbums>
+            <NumberOfTracksTotal>69</NumberOfTracksTotal>
+            <NumberOfTracksAverage>10</NumberOfTracksAverage>
+            <AverageLengthOfAlbum>01:01:27</AverageLengthOfAlbum>
+            <AverageLengthOfTrack>00:06:14</AverageLengthOfTrack>
+         </Quantity>
+         <Quantity>
+            <Name>Mgła</Name>
+            <NumberOfAlbums>1</NumberOfAlbums>
+            <NumberOfTracksTotal>6</NumberOfTracksTotal>
+            <NumberOfTracksAverage>6</NumberOfTracksAverage>
+            <AverageLengthOfAlbum>00:42:12</AverageLengthOfAlbum>
+            <AverageLengthOfTrack>00:07:02</AverageLengthOfTrack>
+         </Quantity>
+         <Quantity>
+            <Name>A Perfect Circle</Name>
+            <NumberOfAlbums>4</NumberOfAlbums>
+            <NumberOfTracksTotal>48</NumberOfTracksTotal>
+            <NumberOfTracksAverage>12</NumberOfTracksAverage>
+            <AverageLengthOfAlbum>00:50:05</AverageLengthOfAlbum>
+            <AverageLengthOfTrack>00:04:10</AverageLengthOfTrack>
+         </Quantity>
+         <Quantity>
+            <Name>Powerwolf</Name>
+            <NumberOfAlbums>7</NumberOfAlbums>
+            <NumberOfTracksTotal>76</NumberOfTracksTotal>
+            <NumberOfTracksAverage>11</NumberOfTracksAverage>
+            <AverageLengthOfAlbum>00:43:50</AverageLengthOfAlbum>
+            <AverageLengthOfTrack>00:04:02</AverageLengthOfTrack>
+         </Quantity>
+         <Quantity>
+            <Name>Slipknot</Name>
+            <NumberOfAlbums>5</NumberOfAlbums>
+            <NumberOfTracksTotal>69</NumberOfTracksTotal>
+            <NumberOfTracksAverage>14</NumberOfTracksAverage>
+            <AverageLengthOfAlbum>01:01:44</AverageLengthOfAlbum>
+            <AverageLengthOfTrack>00:04:28</AverageLengthOfTrack>
+         </Quantity>
+         <Quantity>
+            <Name>System Of A Down</Name>
+            <NumberOfAlbums>5</NumberOfAlbums>
+            <NumberOfTracksTotal>66</NumberOfTracksTotal>
+            <NumberOfTracksAverage>13</NumberOfTracksAverage>
+            <AverageLengthOfAlbum>00:40:45</AverageLengthOfAlbum>
+            <AverageLengthOfTrack>00:03:05</AverageLengthOfTrack>
+         </Quantity>
+         <Quantity>
+            <Name>Tool</Name>
+            <NumberOfAlbums>4</NumberOfAlbums>
+            <NumberOfTracksTotal>49</NumberOfTracksTotal>
+            <NumberOfTracksAverage>12</NumberOfTracksAverage>
+            <AverageLengthOfAlbum>01:15:20</AverageLengthOfAlbum>
+            <AverageLengthOfTrack>00:06:09</AverageLengthOfTrack>
+         </Quantity>
+      </ArtistQuantities>
+   </Statistics>
+   <RaportDate>2019-05-27+02:00</RaportDate>
+</Project>

@@ -1,11 +1,11 @@
-﻿<xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions">
+<xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions">
     <xsl:output method="text" indent="yes"/>
 
     <xsl:template match="Project/Bands/Band">
         <xsl:for-each select="Albums/Album">
             <xsl:text>&#xd;</xsl:text>
             
-            <xsl:variable name="maxBandName" select="max(../../../[Band/string-length(BandName)])"/>
+            <xsl:variable name="maxBandName" select="max(../../../Band/string-length(BandName))"/>
             <xsl:call-template name="extendTo">
                 <xsl:with-param name="length" select="$maxBandName"/>
                 <xsl:with-param name="word" select="../../BandName"/>
@@ -13,7 +13,7 @@
             </xsl:call-template>
             <xsl:text> | </xsl:text>
 
-            <xsl:variable name="maxNationality" select="max(../../../[Band/string-length(Nationality)])"/>
+            <xsl:variable name="maxNationality" select="fn:max(../../../Band/fn:string-length(Nationality))"/>
             <xsl:call-template name="extendTo">
                 <xsl:with-param name="length" select="$maxNationality"/>
                 <xsl:with-param name="word" select="../../Nationality"/>
@@ -21,7 +21,7 @@
             </xsl:call-template>
             <xsl:text> | </xsl:text>
 
-            <xsl:variable name="maxFrontman" select="max(../../../[Band/Members/string-length(concat(Member[1]/Name[1], ' ', Member[1]/Surname))])"/>
+            <xsl:variable name="maxFrontman" select="max(../../../Band/Members/string-length(concat(Member[1]/Name[1], ' ', Member[1]/Surname)))"/>
             <xsl:call-template name="extendTo">
                 <xsl:with-param name="length" select="$maxFrontman"/>
                 <xsl:with-param name="word" select="../../Members/concat(Member[1]/Name[1], ' ', Member[1]/Surname)"/>
@@ -29,7 +29,7 @@
             </xsl:call-template>
             <xsl:text> | </xsl:text>
 
-            <xsl:variable name="maxTitle" select="max(../../../[Band/Albums/Album/string-length(Title)])"/>
+            <xsl:variable name="maxTitle" select="max(../../../Band/Albums/Album/string-length(Title))"/>
             <xsl:call-template name="extendTo">
                 <xsl:with-param name="length" select="$maxTitle"/>
                 <xsl:with-param name="word" select="Title"/>
@@ -37,7 +37,7 @@
             </xsl:call-template>
             <xsl:text> | </xsl:text>
 
-            <xsl:variable name="maxGenre" select="max(../../../[Band/Albums/Album/Genres/string-length(Genre[1])])"/>
+            <xsl:variable name="maxGenre" select="max(../../../Band/Albums/Album/Genres/string-length(Genre[1]))"/>
             <xsl:call-template name="extendTo">
                 <xsl:with-param name="length" select="$maxGenre"/>
                 <xsl:with-param name="word" select="Genres/Genre[1]"/>
@@ -45,7 +45,7 @@
             </xsl:call-template>
             <xsl:text> | </xsl:text>
 
-            <xsl:variable name="maxNumberOfTracks" select="max(../../../[Band/Albums/Album/string-length(NumberOfTracks)])"/>
+            <xsl:variable name="maxNumberOfTracks" select="max(../../../Band/Albums/Album/string-length(NumberOfTracks))"/>
             <xsl:call-template name="extendTo">
                 <xsl:with-param name="length" select="$maxNumberOfTracks"/>
                 <xsl:with-param name="word" select="NumberOfTracks"/>
@@ -53,7 +53,7 @@
             </xsl:call-template>
             <xsl:text> | </xsl:text>
 
-            <xsl:variable name="maxLength" select="max(../../../[Band/Albums/Album/string-length(Length)])"/>
+            <xsl:variable name="maxLength" select="max(../../../Band/Albums/Album/string-length(Length))"/>
             <xsl:call-template name="extendTo">
                 <xsl:with-param name="length" select="$maxLength"/>
                 <xsl:with-param name="word" select="Length"/>
@@ -61,7 +61,7 @@
             </xsl:call-template>
             <xsl:text> | </xsl:text>
 
-            <xsl:variable name="maxReleaseDate" select="max(../../../[Band/Albums/Album/string-length(ReleaseDate)])"/>
+            <xsl:variable name="maxReleaseDate" select="max(../../../Band/Albums/Album/string-length(ReleaseDate))"/>
             <xsl:call-template name="extendTo">
                 <xsl:with-param name="length" select="$maxReleaseDate"/>
                 <xsl:with-param name="word" select="ReleaseDate"/>

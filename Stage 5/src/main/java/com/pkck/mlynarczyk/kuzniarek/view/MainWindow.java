@@ -1,11 +1,12 @@
-package com.pkck.mlynarczyk.kuzniarek;
+package com.pkck.mlynarczyk.kuzniarek.view;
 
+import com.pkck.mlynarczyk.kuzniarek.logic.XMLConverter;
 import com.pkck.mlynarczyk.kuzniarek.elements.Project;
 import com.pkck.mlynarczyk.kuzniarek.elements.util.CustomNamespacePrefixMapper;
 
 import javax.xml.bind.JAXBException;
 
-public class Application {
+public class MainWindow {
 
     public static void main(String[] args) {
         try {

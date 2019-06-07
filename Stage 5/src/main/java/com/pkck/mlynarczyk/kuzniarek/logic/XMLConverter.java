@@ -1,4 +1,4 @@
-package com.pkck.mlynarczyk.kuzniarek;
+package com.pkck.mlynarczyk.kuzniarek.logic;
 
 import com.sun.xml.bind.marshaller.NamespacePrefixMapper;
 

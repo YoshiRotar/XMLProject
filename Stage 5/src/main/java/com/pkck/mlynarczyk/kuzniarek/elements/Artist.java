@@ -4,7 +4,6 @@ import com.pkck.mlynarczyk.kuzniarek.elements.util.Nationality;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import lombok.ToString;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -19,7 +18,6 @@ import java.util.List;
 @Getter
 @Setter
 @NoArgsConstructor
-@ToString
 public class Artist {
 
     @XmlAttribute(name = "idArtist")
@@ -34,4 +32,9 @@ public class Artist {
 
     @XmlElement(name = "Member")
     private List<BandMember> members;
+
+    @Override
+    public String toString() {
+        return name;
+    }
 }

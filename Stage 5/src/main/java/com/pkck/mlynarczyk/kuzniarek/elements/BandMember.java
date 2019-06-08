@@ -3,7 +3,6 @@ package com.pkck.mlynarczyk.kuzniarek.elements;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import lombok.ToString;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -17,18 +16,36 @@ import java.util.List;
 @Getter
 @Setter
 @NoArgsConstructor
-@ToString
 public class BandMember {
 
     @XmlElement(name = "Name")
-    private List<String> name;
+    private List<String> names;
 
     @XmlElement(name = "Surname")
     private String surname;
 
     @XmlElement(name = "StageName")
-    private List<String> stageName;
+    private List<String> stageNames;
 
     @XmlAttribute(name = "frontman")
     private Boolean isFrontman;
+
+    @Override
+    public String toString() {
+        StringBuilder result = new StringBuilder();
+        if (names != null) {
+            for (String name : names) {
+                result.append(name).append(" ");
+            }
+        }
+        if(stageNames != null) {
+            for (String stageName : stageNames) {
+                result.append("\"").append(stageName).append("\" ");
+            }
+        }
+        if(surname != null) {
+            result.append(surname);
+        }
+        return result.toString();
+    }
 }

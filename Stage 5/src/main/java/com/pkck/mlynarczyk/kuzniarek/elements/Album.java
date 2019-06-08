@@ -5,7 +5,6 @@ import com.pkck.mlynarczyk.kuzniarek.elements.adapters.LocalTimeAdapter;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import lombok.ToString;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -23,7 +22,6 @@ import java.util.List;
 @Getter
 @Setter
 @NoArgsConstructor
-@ToString
 public class Album {
 
     @XmlElement(name = "Title")

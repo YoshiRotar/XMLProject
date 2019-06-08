@@ -3,7 +3,6 @@ package com.pkck.mlynarczyk.kuzniarek.elements;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import lombok.ToString;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -15,7 +14,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 @Getter
 @Setter
 @NoArgsConstructor
-@ToString
 public class Project {
 
     @XmlElement(name = "Head")

@@ -25,4 +25,9 @@ public class Genre implements Serializable {
 
     @XmlValue
     private String name;
+
+    @Override
+    public String toString() {
+        return name;
+    }
 }

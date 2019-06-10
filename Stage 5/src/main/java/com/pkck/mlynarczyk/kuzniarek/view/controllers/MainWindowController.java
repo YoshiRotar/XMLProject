@@ -32,8 +32,6 @@ public class MainWindowController extends ParentController implements Initializa
 
     private String pathToXmlFile;
 
-    private Project project;
-
     public Button fileFinderButton;
 
     public Label pathToFileLabel;
@@ -184,15 +182,31 @@ public class MainWindowController extends ParentController implements Initializa
         }
     }
 
-    public void addAlbum() {
+    public void addAlbum() throws IOException, JAXBException {
         if(project != null) {
-
+            ModifyElementWindow window = new ModifyElementWindow("Dodaj Album",
+                    ModifyElementWindow.ALBUM_WINDOW_TYPE, this);
+            if(returnedAlbum != null) {
+                project.getMusicCollection().getAlbums().add(returnedAlbum);
+                returnedAlbum = null;
+            }
+            persist();
+            albumsTable.refresh();
         }
     }
 
-    public void editAlbum() {
-        if(project != null) {
-
+    public void editAlbum() throws IOException, JAXBException {
+        if(project != null && !albumsTable.getSelectionModel().isEmpty()) {
+            int index = albumsTable.getSelectionModel().getSelectedIndex();
+            returnedAlbum = albumsTable.getSelectionModel().getSelectedItem();
+            ModifyElementWindow window = new ModifyElementWindow("Edytuj Album",
+                    ModifyElementWindow.ALBUM_WINDOW_TYPE, this);
+            if (returnedAlbum != null) {
+                project.getMusicCollection().getAlbums().set(index, returnedAlbum);
+                returnedAlbum = null;
+            }
+            persist();
+            albumsTable.refresh();
         }
     }
 

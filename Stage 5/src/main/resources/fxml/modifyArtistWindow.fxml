@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pkck.mlynarczyk.kuzniarek.view.controllers.ModifyArtistWindowController">
+   <children>
+      <Label layoutX="26.0" layoutY="28.0" text="Nazwa Zespołu:" />
+      <Label layoutX="40.0" layoutY="59.0" text="Narodowość:" />
+      <Label layoutX="46.0" layoutY="89.0" text="Członkowie:" />
+      <TextField fx:id="bandNameTextField" layoutX="121.0" layoutY="24.0" prefHeight="25.0" prefWidth="459.0" />
+      <ComboBox fx:id="nationalityComboBox" layoutX="121.0" layoutY="55.0" prefHeight="25.0" prefWidth="459.0" />
+      <Button fx:id="commitButton" layoutX="512.0" layoutY="361.0" mnemonicParsing="false" onAction="#commitChanges" text="Zatwierdź" />
+      <Button fx:id="cancelButton" layoutX="446.0" layoutY="361.0" mnemonicParsing="false" onAction="#cancelChanges" text="Anuluj" />
+      <TableView fx:id="membersTable" layoutX="26.0" layoutY="106.0" prefHeight="244.0" prefWidth="484.0">
+        <columns>
+          <TableColumn fx:id="columnMemberNames" prefWidth="147.0" text="Imiona" />
+          <TableColumn fx:id="columnMemberSurname" minWidth="0.0" prefWidth="103.0" text="Nazwisko" />
+            <TableColumn fx:id="columnMemberFrontman" prefWidth="32.0" text="F" />
+            <TableColumn fx:id="columnMemberStageNames" prefWidth="200.0" text="Pseudonimy" />
+        </columns>
+      </TableView>
+      <Button fx:id="addMemberButton" layoutX="516.0" layoutY="106.0" mnemonicParsing="false" onAction="#addMember" prefHeight="25.0" prefWidth="64.0" text="Dodaj" />
+      <Button fx:id="editMemberButton" layoutX="516.0" layoutY="146.0" mnemonicParsing="false" onAction="#editMember" prefHeight="25.0" prefWidth="64.0" text="Edytuj" />
+      <Button fx:id="deleteMemberButton" layoutX="516.0" layoutY="188.0" mnemonicParsing="false" onAction="#deleteMember" prefHeight="25.0" prefWidth="64.0" text="Usuń" />
+   </children>
+</AnchorPane>

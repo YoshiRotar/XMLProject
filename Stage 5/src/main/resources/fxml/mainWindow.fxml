@@ -16,24 +16,27 @@
      <tabs>
        <Tab text="Artyści">
             <content>
-               <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <AnchorPane prefHeight="684.0" prefWidth="1154.0">
                   <children>
-                     <TableView fx:id="artistsTable" prefHeight="684.0" prefWidth="1223.0">
+                     <TableView fx:id="artistsTable" prefHeight="684.0" prefWidth="1130.0">
                        <columns>
                          <TableColumn fx:id="columnArtistName" prefWidth="109.0" text="Nazwa Zespołu" />
                          <TableColumn fx:id="columnArtistNationality" minWidth="0.0" prefWidth="149.0" text="Narodowość" />
                            <TableColumn fx:id="columnArtistMembers" prefWidth="964.0" text="Członkowie" />
                        </columns>
                      </TableView>
+                     <Button fx:id="addArtistButton" layoutX="1130.0" layoutY="150.0" mnemonicParsing="false" onAction="#addArtist" prefHeight="25.0" prefWidth="90.0" text="Dodaj" />
+                     <Button fx:id="EditArtistButton" layoutX="1130.0" layoutY="200.0" mnemonicParsing="false" onAction="#editArtist" prefHeight="25.0" prefWidth="90.0" text="Edytuj" />
+                     <Button fx:id="deleteArtistButton" layoutX="1130.0" layoutY="250.0" mnemonicParsing="false" onAction="#deleteArtist" prefHeight="25.0" prefWidth="90.0" text="Usuń" />
                   </children>
                </AnchorPane>
             </content>
          </Tab>
        <Tab text="Albumy">
             <content>
-               <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <AnchorPane prefHeight="685.0" prefWidth="1239.0">
                   <children>
-                     <TableView fx:id="albumsTable" prefHeight="685.0" prefWidth="1223.0">
+                     <TableView fx:id="albumsTable" prefHeight="685.0" prefWidth="1130.0">
                        <columns>
                          <TableColumn fx:id="columnAlbumTitle" prefWidth="176.0" text="Tytuł" />
                          <TableColumn fx:id="columnAlbumArtist" prefWidth="162.0" text="Artysta" />
@@ -43,6 +46,9 @@
                            <TableColumn fx:id="columnAlbumGenres" prefWidth="615.0" text="Gatunki" />
                        </columns>
                      </TableView>
+                     <Button fx:id="addAlbumButton" layoutX="1130.0" layoutY="150.0" mnemonicParsing="false" onAction="#addAlbum" prefHeight="25.0" prefWidth="90.0" text="Dodaj" />
+                     <Button fx:id="editAlbumButton" layoutX="1130.0" layoutY="200.0" mnemonicParsing="false" onAction="#editAlbum" prefHeight="25.0" prefWidth="90.0" text="Edytuj" />
+                     <Button fx:id="deleteAlbumButton" layoutX="1130.0" layoutY="250.0" mnemonicParsing="false" onAction="#deleteAlbum" prefHeight="25.0" prefWidth="90.0" text="Usuń" />
                   </children>
                </AnchorPane>
             </content>
@@ -51,11 +57,14 @@
            <content>
              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                   <children>
-                     <TableView fx:id="genresTable" prefHeight="683.0" prefWidth="1223.0">
+                     <TableView fx:id="genresTable" prefHeight="683.0" prefWidth="1130.0">
                        <columns>
                          <TableColumn fx:id="columnGenreName" prefWidth="1222.0" text="Nazwa" />
                        </columns>
                      </TableView>
+                     <Button fx:id="addGenreButton" layoutX="1130.0" layoutY="150.0" mnemonicParsing="false" onAction="#addGenre" prefHeight="25.0" prefWidth="90.0" text="Dodaj" />
+                     <Button fx:id="editGenreButton" layoutX="1130.0" layoutY="200.0" mnemonicParsing="false" onAction="#editGenre" prefHeight="25.0" prefWidth="90.0" text="Edytuj" />
+                     <Button fx:id="deleteGenreButton" layoutX="1130.0" layoutY="250.0" mnemonicParsing="false" onAction="#deleteGenre" prefHeight="25.0" prefWidth="90.0" text="Usuń" />
                   </children>
                </AnchorPane>
            </content>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pkck.mlynarczyk.kuzniarek.view.controllers.ModifyMemberWindowController">
+   <children>
+      <Label layoutX="153.0" layoutY="14.0" text="Nazwisko:" />
+      <TextField fx:id="surnameTextBox" layoutX="216.0" layoutY="10.0" prefHeight="25.0" prefWidth="246.0" />
+      <TextArea fx:id="namesTextArea" layoutX="46.0" layoutY="83.0" prefHeight="226.0" prefWidth="222.0" />
+      <TextArea fx:id="bandNamesTextArea" layoutX="333.0" layoutY="83.0" prefHeight="226.0" prefWidth="222.0" />
+      <Label layoutX="138.0" layoutY="66.0" text="Imiona:" />
+      <Label layoutX="410.0" layoutY="66.0" text="Pseudonimy:" />
+      <CheckBox fx:id="isFrontmanCheckBox" graphicTextGap="0.0" layoutX="130.0" layoutY="336.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="0.0" />
+      <Label layoutX="46.0" layoutY="336.0" text="Czy Frontman:" />
+      <Button fx:id="commitButton" layoutX="487.0" layoutY="342.0" mnemonicParsing="false" onAction="#commitChanges" text="Zatwierdź" />
+      <Button fx:id="cancelButton" layoutX="419.0" layoutY="342.0" mnemonicParsing="false" onAction="#cancelChanges" text="Anuluj" />
+   </children>
+</AnchorPane>

@@ -13,6 +13,7 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlIDREF;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.List;
@@ -22,7 +23,7 @@ import java.util.List;
 @Getter
 @Setter
 @NoArgsConstructor
-public class Album {
+public class Album implements Serializable {
 
     @XmlElement(name = "Title")
     private String title;

@@ -29,9 +29,11 @@ public class ModifyMemberWindowController extends ModifyElementController {
         bandMember.setSurname(surnameTextBox.getText());
         String names = namesTextArea.getText();
         List<String> namesAsList = Arrays.asList(names.split("\\r?\\n"));
+        namesAsList.remove("");
         bandMember.setNames(namesAsList);
         String bandNames = bandNamesTextArea.getText();
         List<String> bandNamesAsList = Arrays.asList(bandNames.split("\\r?\\n"));
+        bandNamesAsList.remove("");
         bandMember.setStageNames(bandNamesAsList);
         if (isFrontmanCheckBox.isSelected()) {
             bandMember.setIsFrontman(true);

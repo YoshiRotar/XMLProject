@@ -147,6 +147,7 @@ public class ModifyArtistWindowController extends ModifyElementController implem
                 returnedBandMember = null;
                 memberObservableList = FXCollections.observableArrayList(artist.getMembers());
                 membersTable.setItems(memberObservableList);
+                membersTable.refresh();
             }
         }
     }

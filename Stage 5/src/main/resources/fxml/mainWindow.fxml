@@ -10,7 +10,7 @@
 
 <AnchorPane prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pkck.mlynarczyk.kuzniarek.view.controllers.MainWindowController">
     <Label layoutX="227.0" layoutY="22.0" prefHeight="25.0" prefWidth="75.0" text="Wybrany Plik:" />
-    <Label fx:id="pathToFileLabel" layoutX="310.0" layoutY="22.0" prefHeight="25.0" prefWidth="944.0" />
+    <Label fx:id="pathToFileLabel" layoutX="310.0" layoutY="22.0" prefHeight="25.0" prefWidth="744.0" />
     <Button fx:id="fileFinderButton" layoutX="27.0" layoutY="22.0" mnemonicParsing="false" onAction="#loadXmlFile" prefHeight="25.0" prefWidth="190.0" text="Przeglądaj" />
    <TabPane layoutX="27.0" layoutY="63.0" prefHeight="712.0" prefWidth="1223.0" tabClosingPolicy="UNAVAILABLE">
      <tabs>
@@ -18,7 +18,7 @@
             <content>
                <AnchorPane prefHeight="684.0" prefWidth="1154.0">
                   <children>
-                     <TableView fx:id="artistsTable" prefHeight="684.0" prefWidth="1130.0">
+                     <TableView fx:id="artistsTable" prefHeight="684.0" prefWidth="1126.0">
                        <columns>
                          <TableColumn fx:id="columnArtistName" prefWidth="109.0" text="Nazwa Zespołu" />
                          <TableColumn fx:id="columnArtistNationality" minWidth="0.0" prefWidth="149.0" text="Narodowość" />
@@ -71,4 +71,5 @@
          </Tab>
      </tabs>
    </TabPane>
+   <Button fx:id="generateReportButton" layoutX="1061.0" layoutY="22.0" mnemonicParsing="false" onAction="#generateReport" prefHeight="25.0" prefWidth="190.0" text="Generuj Raport" />
 </AnchorPane>

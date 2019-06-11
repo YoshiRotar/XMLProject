@@ -8,6 +8,7 @@ import com.pkck.mlynarczyk.kuzniarek.elements.Project;
 import com.pkck.mlynarczyk.kuzniarek.elements.util.CustomNamespacePrefixMapper;
 import com.pkck.mlynarczyk.kuzniarek.elements.util.Nationality;
 import com.pkck.mlynarczyk.kuzniarek.logic.XMLConverter;
+import com.pkck.mlynarczyk.kuzniarek.logic.XSLTReportTransformer;
 import com.pkck.mlynarczyk.kuzniarek.view.ModifyElementWindow;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -21,6 +22,8 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.FileChooser;
 
 import javax.xml.bind.JAXBException;
+import javax.xml.transform.TransformerException;
+import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
@@ -85,6 +88,8 @@ public class MainWindowController extends ParentController implements Initializa
     public Button editGenreButton;
     
     public Button deleteGenreButton;
+
+    public Button generateReportButton;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -295,6 +300,19 @@ public class MainWindowController extends ParentController implements Initializa
             artistsTable.setItems(artistObservableList);
         } catch (Exception e) {
             e.printStackTrace();
+        }
+    }
+
+    public void generateReport() throws TransformerException, IOException {
+        if(project != null && !pathToXmlFile.isEmpty()) {
+            XSLTReportTransformer.transform(pathToXmlFile,
+                    "src/main/resources/xmlToXml.xslt",
+                    "src/main/resources/helper.xml");
+            XSLTReportTransformer.transform("src/main/resources/helper.xml",
+                    "src/main/resources/xmlToSvg.xslt",
+                    "src/main/resources/output.html");
+            Desktop desktop = Desktop.getDesktop();
+            desktop.open(new File("src/main/resources/output.svg"));
         }
     }
 }

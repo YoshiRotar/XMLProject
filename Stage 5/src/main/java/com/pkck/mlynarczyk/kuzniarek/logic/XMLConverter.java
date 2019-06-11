@@ -13,6 +13,9 @@ import javax.xml.bind.ValidationEventHandler;
 import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.StringWriter;
 
 public class XMLConverter{
 
@@ -24,8 +27,9 @@ public class XMLConverter{
     }
 
     public static <T> void convertToXml(String path, T object, NamespacePrefixMapper namespacePreferential,
-            String schemaPath, ValidationEventHandler eventHandler) throws JAXBException, SAXException {
+            String schemaPath, ValidationEventHandler eventHandler) throws JAXBException, SAXException, IOException {
         File file = new File(path);
+        StringWriter output = new StringWriter ();
         JAXBContext context = JAXBContext.newInstance(object.getClass());
         Marshaller marshaller = context.createMarshaller();
         SchemaFactory sf = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
@@ -34,6 +38,11 @@ public class XMLConverter{
         marshaller.setEventHandler(eventHandler);
         marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
         marshaller.setProperty("com.sun.xml.bind.namespacePrefixMapper", namespacePreferential);
-        marshaller.marshal(object, file);
+        marshaller.marshal(object, output);
+
+
+        FileWriter fileWriter = new FileWriter (file, false);
+        fileWriter.write (output.toString());
+        fileWriter.close();
     }
 }

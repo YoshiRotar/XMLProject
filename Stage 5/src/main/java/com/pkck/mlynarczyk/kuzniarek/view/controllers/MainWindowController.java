@@ -180,7 +180,7 @@ public class MainWindowController extends ParentController implements Initializa
         }
     }
 
-    public void deleteArtist() throws JAXBException, SAXException {
+    public void deleteArtist() throws JAXBException, SAXException, IOException {
         if(project != null) {
             Artist artist = artistsTable.getSelectionModel().getSelectedItem();
             project.getMusicCollection().getArtists().remove(artist);
@@ -217,7 +217,7 @@ public class MainWindowController extends ParentController implements Initializa
         }
     }
 
-    public void deleteAlbum() throws JAXBException, SAXException {
+    public void deleteAlbum() throws JAXBException, SAXException, IOException {
         if(project != null) {
             Album album = albumsTable.getSelectionModel().getSelectedItem();
             project.getMusicCollection().getAlbums().remove(album);
@@ -264,7 +264,7 @@ public class MainWindowController extends ParentController implements Initializa
         }
     }
 
-    public void deleteGenre() throws JAXBException, SAXException {
+    public void deleteGenre() throws JAXBException, SAXException, IOException {
         if(project != null) {
             Genre genre = genresTable.getSelectionModel().getSelectedItem();
             project.getMusicCollection().getGenres().remove(genre);
@@ -286,7 +286,7 @@ public class MainWindowController extends ParentController implements Initializa
         }
     }
 
-    private void persist() throws JAXBException, SAXException {
+    private void persist() throws JAXBException, SAXException, IOException {
         XMLConverter.convertToXml(pathToXmlFile, project, new CustomNamespacePrefixMapper(),
                 "src/main/resources/schema.xsd", new AlertHandler());
         loadFromPath();
@@ -313,7 +313,7 @@ public class MainWindowController extends ParentController implements Initializa
                     "src/main/resources/helper.xml");
             XSLTReportTransformer.transform("src/main/resources/helper.xml",
                     "src/main/resources/xmlToSvg.xslt",
-                    "src/main/resources/output.html");
+                    "src/main/resources/output.svg");
             Desktop desktop = Desktop.getDesktop();
             desktop.open(new File("src/main/resources/output.svg"));
         }

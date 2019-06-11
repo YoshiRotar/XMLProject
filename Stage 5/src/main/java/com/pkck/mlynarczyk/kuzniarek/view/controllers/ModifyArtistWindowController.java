@@ -71,6 +71,7 @@ public class ModifyArtistWindowController extends ModifyElementController implem
             snapshot = new ArrayList<>(artist.getMembers());
         } else {
            artist = new Artist();
+           artist.setMembers(new ArrayList<>());
         }
     }
 

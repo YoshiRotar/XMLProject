@@ -9,6 +9,7 @@ import com.pkck.mlynarczyk.kuzniarek.elements.util.CustomNamespacePrefixMapper;
 import com.pkck.mlynarczyk.kuzniarek.elements.util.Nationality;
 import com.pkck.mlynarczyk.kuzniarek.logic.XMLConverter;
 import com.pkck.mlynarczyk.kuzniarek.logic.XSLTReportTransformer;
+import com.pkck.mlynarczyk.kuzniarek.view.AlertHandler;
 import com.pkck.mlynarczyk.kuzniarek.view.ModifyElementWindow;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -20,6 +21,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.FileChooser;
+import org.xml.sax.SAXException;
 
 import javax.xml.bind.JAXBException;
 import javax.xml.transform.TransformerException;
@@ -140,7 +142,7 @@ public class MainWindowController extends ParentController implements Initializa
         });
     }
 
-    public void addArtist() throws IOException, JAXBException {
+    public void addArtist() throws IOException, JAXBException, SAXException {
         if(project != null) {
             ModifyElementWindow window = new ModifyElementWindow("Dodaj artystę",
                     ModifyElementWindow.ARTIST_WINDOW_TYPE, this);
@@ -178,7 +180,7 @@ public class MainWindowController extends ParentController implements Initializa
         }
     }
 
-    public void deleteArtist() throws JAXBException {
+    public void deleteArtist() throws JAXBException, SAXException {
         if(project != null) {
             Artist artist = artistsTable.getSelectionModel().getSelectedItem();
             project.getMusicCollection().getArtists().remove(artist);
@@ -187,7 +189,7 @@ public class MainWindowController extends ParentController implements Initializa
         }
     }
 
-    public void addAlbum() throws IOException, JAXBException {
+    public void addAlbum() throws IOException, JAXBException, SAXException {
         if(project != null) {
             ModifyElementWindow window = new ModifyElementWindow("Dodaj Album",
                     ModifyElementWindow.ALBUM_WINDOW_TYPE, this);
@@ -200,7 +202,7 @@ public class MainWindowController extends ParentController implements Initializa
         }
     }
 
-    public void editAlbum() throws IOException, JAXBException {
+    public void editAlbum() throws IOException, JAXBException, SAXException {
         if(project != null && !albumsTable.getSelectionModel().isEmpty()) {
             int index = albumsTable.getSelectionModel().getSelectedIndex();
             returnedAlbum = albumsTable.getSelectionModel().getSelectedItem();
@@ -215,7 +217,7 @@ public class MainWindowController extends ParentController implements Initializa
         }
     }
 
-    public void deleteAlbum() throws JAXBException {
+    public void deleteAlbum() throws JAXBException, SAXException {
         if(project != null) {
             Album album = albumsTable.getSelectionModel().getSelectedItem();
             project.getMusicCollection().getAlbums().remove(album);
@@ -224,7 +226,7 @@ public class MainWindowController extends ParentController implements Initializa
         }
     }
 
-    public void addGenre() throws IOException, JAXBException {
+    public void addGenre() throws IOException, JAXBException, SAXException {
         if(project != null) {
             ModifyElementWindow window = new ModifyElementWindow("Dodaj Gatunek",
                     ModifyElementWindow.GENRE_WINDOW_TYPE, this);
@@ -262,7 +264,7 @@ public class MainWindowController extends ParentController implements Initializa
         }
     }
 
-    public void deleteGenre() throws JAXBException {
+    public void deleteGenre() throws JAXBException, SAXException {
         if(project != null) {
             Genre genre = genresTable.getSelectionModel().getSelectedItem();
             project.getMusicCollection().getGenres().remove(genre);
@@ -284,8 +286,9 @@ public class MainWindowController extends ParentController implements Initializa
         }
     }
 
-    private void persist() throws JAXBException {
-        XMLConverter.convertToXml(pathToXmlFile, project, new CustomNamespacePrefixMapper());
+    private void persist() throws JAXBException, SAXException {
+        XMLConverter.convertToXml(pathToXmlFile, project, new CustomNamespacePrefixMapper(),
+                "src/main/resources/schema.xsd", new AlertHandler());
         loadFromPath();
     }
 

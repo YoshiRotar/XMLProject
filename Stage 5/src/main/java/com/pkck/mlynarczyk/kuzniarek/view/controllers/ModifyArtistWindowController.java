@@ -3,6 +3,7 @@ package com.pkck.mlynarczyk.kuzniarek.view.controllers;
 import com.pkck.mlynarczyk.kuzniarek.elements.Artist;
 import com.pkck.mlynarczyk.kuzniarek.elements.BandMember;
 import com.pkck.mlynarczyk.kuzniarek.elements.util.Nationality;
+import com.pkck.mlynarczyk.kuzniarek.view.AlertHandler;
 import com.pkck.mlynarczyk.kuzniarek.view.ModifyElementWindow;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -54,10 +55,14 @@ public class ModifyArtistWindowController extends ModifyElementController implem
 
     @Override
     public void commitChanges() {
-        artist.setName(bandNameTextField.getText());
-        artist.setNationality(nationalityComboBox.getValue());
-        parentController.setReturnedArtist(artist);
-        closeWindow();
+        try {
+            artist.setName(bandNameTextField.getText());
+            artist.setNationality(nationalityComboBox.getValue());
+            parentController.setReturnedArtist(artist);
+            closeWindow();
+        } catch (Exception e) {
+            AlertHandler.alert("Błąd","", "Napotkano błąd, spróbuj jeszcze raz");
+        }
     }
 
     @Override

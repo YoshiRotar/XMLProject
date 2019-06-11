@@ -3,6 +3,7 @@ package com.pkck.mlynarczyk.kuzniarek.view.controllers;
 import com.pkck.mlynarczyk.kuzniarek.elements.Album;
 import com.pkck.mlynarczyk.kuzniarek.elements.Artist;
 import com.pkck.mlynarczyk.kuzniarek.elements.Genre;
+import com.pkck.mlynarczyk.kuzniarek.view.AlertHandler;
 import javafx.collections.FXCollections;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
@@ -34,33 +35,37 @@ public class ModifyAlbumWindowController extends ModifyElementController {
 
     @Override
     public void commitChanges() {
-        Album album;
-        if (parentController.getReturnedAlbum() == null) {
-            album = new Album();
-        } else {
-            album = parentController.getReturnedAlbum();
+        try {
+            Album album;
+            if (parentController.getReturnedAlbum() == null) {
+                album = new Album();
+            } else {
+                album = parentController.getReturnedAlbum();
+            }
+            album.setTitle(nameTextField.getText());
+            album.setArtist(artistComboBox.getValue());
+            album.setNumberOfTrucks(Long.parseLong(numberOfTracksTextField.getText()));
+            String lengthString = lengthTextField.getText();
+            album.setLength(LocalTime.of(
+                    Integer.parseInt(lengthString.substring(0, 2)),
+                    Integer.parseInt(lengthString.substring(3, 5)),
+                    Integer.parseInt(lengthString.substring(6, 8))
+            ));
+            String releaseDateString = releaseDateTextField.getText();
+            album.setReleaseDate(LocalDate.of(
+                    Integer.parseInt(releaseDateString.substring(0, 4)),
+                    Integer.parseInt(releaseDateString.substring(5, 7)),
+                    Integer.parseInt(releaseDateString.substring(8, 10))
+            ));
+            if (album.getGenres() != null) { album.getGenres().clear(); } else { album.setGenres(new ArrayList<>()); }
+            for (ComboBox<Genre> comboBox : genresListView.getItems()) {
+                album.getGenres().add(comboBox.getValue());
+            }
+            parentController.setReturnedAlbum(album);
+            closeWindow();
+        } catch (Exception e) {
+            AlertHandler.alert("Błąd","", "Napotkano błąd, spróbuj jeszcze raz");
         }
-        album.setTitle(nameTextField.getText());
-        album.setArtist(artistComboBox.getValue());
-        album.setNumberOfTrucks(Long.parseLong(numberOfTracksTextField.getText()));
-        String lengthString = lengthTextField.getText();
-        album.setLength(LocalTime.of(
-                Integer.parseInt(lengthString.substring(0, 2)),
-                Integer.parseInt(lengthString.substring(3, 5)),
-                Integer.parseInt(lengthString.substring(6, 8))
-        ));
-        String releaseDateString = releaseDateTextField.getText();
-        album.setReleaseDate(LocalDate.of(
-                Integer.parseInt(releaseDateString.substring(0, 4)),
-                Integer.parseInt(releaseDateString.substring(5, 7)),
-                Integer.parseInt(releaseDateString.substring(8, 10))
-        ));
-        if (album.getGenres() != null) { album.getGenres().clear(); } else { album.setGenres(new ArrayList<>()); }
-        for (ComboBox<Genre> comboBox : genresListView.getItems()) {
-            album.getGenres().add(comboBox.getValue());
-        }
-        parentController.setReturnedAlbum(album);
-        closeWindow();
     }
 
     @Override

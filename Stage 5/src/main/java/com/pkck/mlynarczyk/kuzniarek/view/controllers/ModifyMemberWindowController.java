@@ -1,6 +1,7 @@
 package com.pkck.mlynarczyk.kuzniarek.view.controllers;
 
 import com.pkck.mlynarczyk.kuzniarek.elements.BandMember;
+import com.pkck.mlynarczyk.kuzniarek.view.AlertHandler;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
@@ -20,26 +21,30 @@ public class ModifyMemberWindowController extends ModifyElementController {
 
     @Override
     public void commitChanges() {
-        BandMember bandMember;
-        if (parentController.getReturnedBandMember() == null) {
-            bandMember = new BandMember();
-        } else {
-            bandMember = parentController.getReturnedBandMember();
+        try {
+            BandMember bandMember;
+            if (parentController.getReturnedBandMember() == null) {
+                bandMember = new BandMember();
+            } else {
+                bandMember = parentController.getReturnedBandMember();
+            }
+            bandMember.setSurname(surnameTextBox.getText());
+            String names = namesTextArea.getText();
+            List<String> namesAsList = Arrays.asList(names.split("\\r?\\n"));
+            namesAsList.remove("");
+            bandMember.setNames(namesAsList);
+            String bandNames = bandNamesTextArea.getText();
+            List<String> bandNamesAsList = Arrays.asList(bandNames.split("\\r?\\n"));
+            bandNamesAsList.remove("");
+            bandMember.setStageNames(bandNamesAsList);
+            if (isFrontmanCheckBox.isSelected()) {
+                bandMember.setIsFrontman(true);
+            }
+            parentController.setReturnedBandMember(bandMember);
+            closeWindow();
+        } catch (Exception e) {
+            AlertHandler.alert("Błąd","", "Napotkano błąd, spróbuj jeszcze raz");
         }
-        bandMember.setSurname(surnameTextBox.getText());
-        String names = namesTextArea.getText();
-        List<String> namesAsList = Arrays.asList(names.split("\\r?\\n"));
-        namesAsList.remove("");
-        bandMember.setNames(namesAsList);
-        String bandNames = bandNamesTextArea.getText();
-        List<String> bandNamesAsList = Arrays.asList(bandNames.split("\\r?\\n"));
-        bandNamesAsList.remove("");
-        bandMember.setStageNames(bandNamesAsList);
-        if (isFrontmanCheckBox.isSelected()) {
-            bandMember.setIsFrontman(true);
-        }
-        parentController.setReturnedBandMember(bandMember);
-        closeWindow();
     }
 
     @Override

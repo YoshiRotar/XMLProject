@@ -18,15 +18,19 @@ public class ModifyElementWindow {
 
     public ModifyElementWindow(String title, String windowType, ParentController parentController)
             throws IOException, CloneNotSupportedException {
-        Stage stage = new Stage();
-        FXMLLoader loader = new FXMLLoader();
-        Parent parent = loader.load(getClass().getResourceAsStream(windowType));
-        ModifyElementController controller = loader.getController();
-        controller.setParentController(parentController);
-        controller.refresh();
-        Scene scene = new Scene(parent);
-        stage.setTitle(title);
-        stage.setScene(scene);
-        stage.showAndWait();
+        try {
+            Stage stage = new Stage();
+            FXMLLoader loader = new FXMLLoader();
+            Parent parent = loader.load(getClass().getResourceAsStream(windowType));
+            ModifyElementController controller = loader.getController();
+            controller.setParentController(parentController);
+            controller.refresh();
+            Scene scene = new Scene(parent);
+            stage.setTitle(title);
+            stage.setScene(scene);
+            stage.showAndWait();
+        } catch (Exception e) {
+            AlertHandler.alert("Błąd","", "Napotkano błąd, spróbuj jeszcze raz");
+        }
     }
 }

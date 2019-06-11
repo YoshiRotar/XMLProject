@@ -14,13 +14,17 @@ public class MainWindow extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        String fxmlPath = "/fxml/mainWindow.fxml";
-        FXMLLoader loader = new FXMLLoader();
-        Parent rootNode = loader.load(getClass().getResourceAsStream(fxmlPath));
+        try {
+            String fxmlPath = "/fxml/mainWindow.fxml";
+            FXMLLoader loader = new FXMLLoader();
+            Parent rootNode = loader.load(getClass().getResourceAsStream(fxmlPath));
 
-        Scene scene = new Scene(rootNode);
-        stage.setTitle("XML Project");
-        stage.setScene(scene);
-        stage.show();
+            Scene scene = new Scene(rootNode);
+            stage.setTitle("XML Project");
+            stage.setScene(scene);
+            stage.show();
+        } catch (Exception e) {
+            AlertHandler.alert("Błąd","", "Napotkano błąd, spróbuj jeszcze raz");
+        }
     }
 }

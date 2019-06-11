@@ -286,10 +286,16 @@ public class MainWindowController extends ParentController implements Initializa
         }
     }
 
-    private void persist() throws JAXBException, SAXException, IOException {
-        XMLConverter.convertToXml(pathToXmlFile, project, new CustomNamespacePrefixMapper(),
-                "src/main/resources/schema.xsd", new AlertHandler());
-        loadFromPath();
+    private void persist() throws JAXBException {
+        try {
+            XMLConverter.convertToXml(pathToXmlFile, project, new CustomNamespacePrefixMapper(),
+                    "src/main/resources/schema.xsd", new AlertHandler());
+        } catch (Exception e) {
+            System.out.println("Ups");
+        }
+        finally {
+            loadFromPath();
+        }
     }
 
     private void loadFromPath() throws JAXBException {

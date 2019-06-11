@@ -7,7 +7,7 @@ import javax.xml.bind.ValidationEventHandler;
 
 public class AlertHandler implements ValidationEventHandler {
 
-    private static void alert(String title, String header, String message) {
+    public static void alert(String title, String header, String message) {
         Alert alert = new Alert(Alert.AlertType.ERROR);
         alert.setTitle(title);
         alert.setHeaderText(header);

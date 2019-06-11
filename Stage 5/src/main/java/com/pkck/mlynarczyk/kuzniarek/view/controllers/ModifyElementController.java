@@ -28,5 +28,5 @@ public abstract class ModifyElementController extends ParentController {
 
     public abstract void commitChanges();
 
-    public abstract void refresh();
+    public abstract void refresh() throws CloneNotSupportedException;
 }

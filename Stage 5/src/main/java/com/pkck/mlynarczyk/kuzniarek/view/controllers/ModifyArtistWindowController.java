@@ -61,14 +61,17 @@ public class ModifyArtistWindowController extends ModifyElementController implem
     }
 
     @Override
-    public void refresh() {
+    public void refresh() throws CloneNotSupportedException {
         if (parentController.getReturnedArtist() != null) {
             artist = parentController.getReturnedArtist();
             bandNameTextField.setText(parentController.getReturnedArtist().getName());
             nationalityComboBox.setValue(parentController.getReturnedArtist().getNationality());
             memberObservableList = FXCollections.observableArrayList(parentController.getReturnedArtist().getMembers());
             membersTable.setItems(memberObservableList);
-            snapshot = new ArrayList<>(artist.getMembers());
+            snapshot = new ArrayList<>();
+            for ( BandMember member : artist.getMembers() ) {
+                snapshot.add((BandMember) member.clone());
+            }
         } else {
            artist = new Artist();
            artist.setMembers(new ArrayList<>());
@@ -78,6 +81,7 @@ public class ModifyArtistWindowController extends ModifyElementController implem
     @Override
     public void cancelChanges() {
         artist.setMembers(snapshot);
+        parentController.returnedArtist.setMembers(snapshot);
         super.cancelChanges();
     }
 
@@ -125,7 +129,7 @@ public class ModifyArtistWindowController extends ModifyElementController implem
         });
     }
 
-    public void addMember() throws IOException {
+    public void addMember() throws IOException, CloneNotSupportedException {
         ModifyElementWindow window = new ModifyElementWindow("Dodaj Członka",
                 ModifyElementWindow.MEMBER_WINDOW_TYPE, this);
         if(returnedBandMember != null) {
@@ -136,7 +140,7 @@ public class ModifyArtistWindowController extends ModifyElementController implem
         }
     }
 
-    public void editMember() throws IOException {
+    public void editMember() throws IOException, CloneNotSupportedException {
         if (!membersTable.getSelectionModel().isEmpty()) {
             int index = membersTable.getSelectionModel().getSelectedIndex();
             returnedBandMember = membersTable.getSelectionModel().getSelectedItem();

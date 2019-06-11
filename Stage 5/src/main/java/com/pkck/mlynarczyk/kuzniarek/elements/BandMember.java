@@ -17,7 +17,7 @@ import java.util.List;
 @Getter
 @Setter
 @NoArgsConstructor
-public class BandMember implements Serializable {
+public class BandMember implements Serializable, Cloneable {
 
     @XmlElement(name = "Name")
     private List<String> names;
@@ -48,5 +48,10 @@ public class BandMember implements Serializable {
             result.append(surname);
         }
         return result.toString();
+    }
+
+    @Override
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone();
     }
 }

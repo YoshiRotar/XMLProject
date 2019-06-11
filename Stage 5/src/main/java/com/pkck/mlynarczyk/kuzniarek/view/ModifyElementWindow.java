@@ -17,7 +17,7 @@ public class ModifyElementWindow {
     public static final String MEMBER_WINDOW_TYPE = "/fxml/modifyMemberWindow.fxml";
 
     public ModifyElementWindow(String title, String windowType, ParentController parentController)
-            throws IOException {
+            throws IOException, CloneNotSupportedException {
         Stage stage = new Stage();
         FXMLLoader loader = new FXMLLoader();
         Parent parent = loader.load(getClass().getResourceAsStream(windowType));

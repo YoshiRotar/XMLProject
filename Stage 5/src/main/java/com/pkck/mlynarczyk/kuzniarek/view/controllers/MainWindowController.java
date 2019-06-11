@@ -142,7 +142,7 @@ public class MainWindowController extends ParentController implements Initializa
         });
     }
 
-    public void addArtist() throws IOException, JAXBException, SAXException {
+    public void addArtist() throws IOException, JAXBException, SAXException, CloneNotSupportedException {
         if(project != null) {
             ModifyElementWindow window = new ModifyElementWindow("Dodaj artystę",
                     ModifyElementWindow.ARTIST_WINDOW_TYPE, this);
@@ -189,7 +189,7 @@ public class MainWindowController extends ParentController implements Initializa
         }
     }
 
-    public void addAlbum() throws IOException, JAXBException, SAXException {
+    public void addAlbum() throws IOException, JAXBException, SAXException, CloneNotSupportedException {
         if(project != null) {
             ModifyElementWindow window = new ModifyElementWindow("Dodaj Album",
                     ModifyElementWindow.ALBUM_WINDOW_TYPE, this);
@@ -202,7 +202,7 @@ public class MainWindowController extends ParentController implements Initializa
         }
     }
 
-    public void editAlbum() throws IOException, JAXBException, SAXException {
+    public void editAlbum() throws IOException, JAXBException, SAXException, CloneNotSupportedException {
         if(project != null && !albumsTable.getSelectionModel().isEmpty()) {
             int index = albumsTable.getSelectionModel().getSelectedIndex();
             returnedAlbum = albumsTable.getSelectionModel().getSelectedItem();
@@ -226,7 +226,7 @@ public class MainWindowController extends ParentController implements Initializa
         }
     }
 
-    public void addGenre() throws IOException, JAXBException, SAXException {
+    public void addGenre() throws IOException, JAXBException, SAXException, CloneNotSupportedException {
         if(project != null) {
             ModifyElementWindow window = new ModifyElementWindow("Dodaj Gatunek",
                     ModifyElementWindow.GENRE_WINDOW_TYPE, this);

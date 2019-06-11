@@ -24,9 +24,9 @@
                             <xsl:element name="NumberOfTracksTotal">
                                 <xsl:value-of select="sum(/mc:Project/Collection/Albums/Album[fn:tokenize(@idGenre, '\s+') = $id]/NumberOfTracks)"/>
                             </xsl:element>
+                            <xsl:variable name="count" select="count(/mc:Project/Collection/Albums/Album/fn:tokenize(@idGenre, '\s+')[. = $id])"/>
                             <xsl:element name="NumberOfTracksAverage">
-                                <xsl:value-of select="round(sum(/mc:Project/Collection/Albums/Album[fn:tokenize(@idGenre, '\s+') = $id]/NumberOfTracks) div 
-								count(/mc:Project/Collection/Albums/Album/fn:tokenize(@idGenre, '\s+')[. = $id]))"/>
+                                <xsl:value-of select="if ($count=0) then 0 else round(sum(/mc:Project/Collection/Albums/Album[fn:tokenize(@idGenre, '\s+') = $id]/NumberOfTracks) div $count)"/>
                             </xsl:element>
                             <xsl:element name="AverageLengthOfAlbum">
                                 <xsl:variable name="intTime" as="element()*">
@@ -53,8 +53,8 @@
                                         </xsl:element>
                                     </xsl:for-each>
                                 </xsl:variable>
-                                <xsl:variable name="avgOfInt" select="sum($intTime) div 
-									sum(/mc:Project/Collection/Albums/Album[fn:tokenize(@idGenre, '\s+') = $id]/NumberOfTracks)"/>
+                                <xsl:variable name="sum" select="sum(/mc:Project/Collection/Albums/Album[fn:tokenize(@idGenre, '\s+') = $id]/NumberOfTracks)"/>
+                                <xsl:variable name="avgOfInt" select="if ($count=0) then 0 else sum($intTime) div $sum"/>
                                 <xsl:call-template name="integerToTime">
                                     <xsl:with-param name="integer" select="$avgOfInt"/>
                                 </xsl:call-template>
@@ -76,8 +76,8 @@
                                 <xsl:value-of select="sum(/mc:Project/Collection/Albums/Album[@idArtist = $id]/NumberOfTracks)"/>
                             </xsl:element>
                             <xsl:element name="NumberOfTracksAverage">
-                                <xsl:value-of select="round(sum(/mc:Project/Collection/Albums/Album[@idArtist = $id]/NumberOfTracks) div 
-								count(/mc:Project/Collection/Albums/Album/@idArtist[. = $id]))"/>
+                                <xsl:variable name="count" select="count(/mc:Project/Collection/Albums/Album/@idArtist[. = $id])"/>
+                                <xsl:value-of select="if ($count=0) then 0 else round(sum(/mc:Project/Collection/Albums/Album[@idArtist = $id]/NumberOfTracks) div $count)"/>
                             </xsl:element>
                             <xsl:element name="AverageLengthOfAlbum">
                                 <xsl:variable name="intTime" as="element()*">
@@ -104,7 +104,8 @@
                                         </xsl:element>
                                     </xsl:for-each>
                                 </xsl:variable>
-                                <xsl:variable name="avgOfInt" select="sum($intTime) div sum(/mc:Project/Collection/Albums/Album[@idArtist = $id]/NumberOfTracks)"/>
+                                <xsl:variable name="sum" select="sum(/mc:Project/Collection/Albums/Album[@idArtist = $id]/NumberOfTracks)"/>
+                                <xsl:variable name="avgOfInt" select="if ($sum=0) then 0 else sum($intTime) div $sum"/>
                                 <xsl:call-template name="integerToTime">
                                     <xsl:with-param name="integer" select="$avgOfInt"/>
                                 </xsl:call-template>
